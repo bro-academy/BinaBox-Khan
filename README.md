@@ -1,5 +1,6 @@
 # Binabox - homework project
 
-Student: 
+Student: Invisible Ink
 
-Mentor: 
+Mentor: Mykola Khushka
+
