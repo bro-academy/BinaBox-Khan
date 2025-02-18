@@ -2,5 +2,5 @@
 
 Student: Invisible Ink
 
-Mentor: Mykola Khushka
-
+Mentor: Mykola KushkaS
+Teacher Surname : Andrea
