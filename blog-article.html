@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta 
-      name="description" 
-      content="Discover the most recent developments in blockchain gaming, NFTs, and metaverse trends. 
-      Learn more about digital assets, The Basilisks NFT, and how they will influence gaming and cryptocurrency in the future." 
+    <meta
+      name="description"
+      content="Discover the most recent developments in blockchain gaming, NFTs, and metaverse trends.
+      Learn more about digital assets, The Basilisks NFT, and how they will influence gaming and cryptocurrency in the future."
     />
     <title>HTML and CSS</title>
     <link rel="stylesheet" href="css/styles.css" />
@@ -17,7 +17,7 @@
     </div>
     <nav class="header__nav">
       <a href="/" class="header__nav-link">Home</a>
-      <a href="#" class="header__nav-link">Blog</a>
+      <a href="#" class="header__nav-link header__nav-link--active">Blog</a>
       <a href="#" class="header__nav-link">Catalog</a>
       <a href="#" class="header__nav-link">Contact us</a>
     </nav>
@@ -55,7 +55,7 @@
       <p class="post__content">
         The Basilisks that <strong class="post__content-strong">players</strong> collect are represented with
         NFTs on Ethereum’s blockchain with real-world value. Players use the
-        <a  class="post__content-link" href="" ><strong class="post__content-strong">Basilisks they have</strong></a> they have gathered
+        <a class="content-link" href="#"><strong class="post__content-strong">Basilisks they have</strong></a> they have gathered
         to battle other players to win ether (ETH). In Balthazar Dragons,
         players are immersed in a 3D open world to explore and capture
         dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming
@@ -63,28 +63,26 @@
         decentralized autonomous organization (DAO) called the Balthazar DAO.
       </p>
       <ul class="list">
-        <li class="post__list-item">
+        <li class="list-item">
           The Basilisks that players collect are represented with NFTs on
           Ethereum’s blockchain with real-world value. Players use the Basilisks
           they have gathered to battle other players to win ether (ETH).
         </li>
-        <li class="post__list-item">
+        <li class="list-item">
           In Balthazar Dragons, players are immersed in a 3D open world to
           explore and capture dragon-like beasts called Basilisks. Balthazar
           Dragons is an upcoming fantasy role-playing
-          <a class="post__content-link" href="#"><strong class="post__content-strong">Game developed </strong></a> on the Ethereum
+          <a class="content-link" href="#"><strong class="post__content-strong">Game developed </strong></a> on the Ethereum
           blockchain by a decentralized autonomous organization (DAO) called the
           Balthazar DAO.
         </li>
       </ul>
-      <div class="post__list-container">
-        <ul class="post__list">
-          <li class="post__list-item">List Name</li>
-          <li class="post__list-item">List Name</li>
-          <li class="post__list-item">List Name</li>
-          <li class="post__list-item">List Name</li>
+        <ul class="post-list">
+          <li class="post-list__item">List Name</li>
+          <li class="post-list__item">List Name</li>
+          <li class="post-list__item">List Name</li>
+          <li class="post-list__item">List Name</li>
         </ul>
-      </div>
       <div class="post__quote">
         <figure class="post__quote-figure">
           <blockquote class="post__quote-blockquote">
@@ -97,6 +95,16 @@
           <span class=post__quote-rating-score >8.5/10</span>
           <span class=post__quote-rating-source >Markout Corporation</span>
         </div>
+      </div>
+      <div class="post__gallery-wrapper">
+        <figure class="post__gallery-item">
+          <img class="post__gallery-img" src="#" alt="dragon"/>
+          <figcaption class="post__gallery-caption">Photo caption</figcaption>
+        </figure>
+        <figure class="post__gallery-item">
+          <img class="post__gallery-img" src="#" alt="dragon-man"/>
+          <figcaption class="post__gallery-caption">Photo caption</figcaption>
+        </figure>
       </div>
       <h3 class="post__subtitle">NFTs are digital assets that represent real-world objects</h3>
       <p class="post__content">
@@ -190,7 +198,7 @@
       </p>
     </div>
     <div class="footer__section">
-      <nav class="footer-nav">
+      <nav class="footer__nav">
         <h5 class="footer__nav-title">Subscribe</h5>
         <ul class="footer__nav-list">
           <li class="footer__nav-item"><a href="#" class="footer__nav-link"> Blog</a></li>
@@ -209,20 +217,37 @@
         </ul>
       </nav>
     </div>
-    <div class="footer__social">
-      <a class="footer__social-link" href="#" target="_blank">
-        <img src="#" alt="Twitter Logo Loading..."
-      class="footer__social-icon"/></a>
-
-      <a class=footer__social-link href="#" target="_blank"
-        ><img src="#" alt="Facebook Logo Loading..."
-      class="footer__social-icon"/></a>
-      <a class="footer__social-link" href="#" target="_blank"
-        ><img src="#" alt="Telegram Logo Loading..."
-        class="footer__social-icon" /></a>
-      <a class="footer__social-link" href="#" target="_blank"
-        ><img src="#" alt="Youtube Logo Loading..." class="footer__social-icon" />
-      </a>
+    <div class="social-links">
+      <li class="social-item">
+        <a href="#" target="_blank" class="social-link">
+          <img src="#" alt="Twitter icon" class="social-icon"
+        /></a>
+      </li>
+      <li class="social-item">
+        <a href="#" target="_blank" class="social-link">
+          <img src="#" alt="Facebook icon" class="social-icon"
+        /></a>
+      </li>
+      <li class="social-item">
+        <a href="#" target="_blank" class="social-link">
+          <img src="#" alt="Telegram icon" class="social-icon"
+        /></a>
+      </li>
+      <li class="social-item">
+        <a href="#" target="_blank" class="social-link">
+          <img src="#" alt="Youtube icon" class="social-icon"
+        /></a>
+      </li>
+      <li class="social-item">
+        <a href="#" target="_blank" class="social-link">
+          <img src="#" alt="Tiktok icon" class="social-icon"
+        /></a>
+      </li>
+      <li class="social-item">
+        <a href="#" target="_blank" class="social-link">
+          <img src="#" alt="Discord icon" class="social-icon"
+        /></a>
+      </li>
     </div>
   </footer>
 </html>

@@ -19,7 +19,7 @@
           <a href="#" class="header__logo-link"><img src="#" alt="bina box logo" class="header__logo-image" /></a>
         </div>
       <nav class="header__nav">
-        <a href="/" class="header__nav-link">Home</a>
+        <a href="/" class="header__nav-link header__nav-link--active">Home</a>
         <a href="#" class="header__nav-link">Blog</a>
         <a href="#" class="header__nav-link">Catalog</a>
         <a href="#" class="header__nav-link">Contact us</a>
@@ -51,39 +51,39 @@
       </section>
       <!--Catalog-->
       <section class="catalog">
-        <h3 class="catalog__star">Catalog</h3>
-        <div>
-          <button class="catalog__button catalog__button-seeall">See All</button>
-          <button class="catalog__button catalog__button-right">&lt;</button>
-          <button class="catalog__button catalog__button-left">&lt;</button>
+        <h3 class="catalog__title">Catalog</h3>
+        <div class="catalog__buttons">
+          <button class="catalog__button catalog__button--all">See All</button>
+          <button class="catalog__button catalog__button--right">&lt;</button>
+          <button class="catalog__button catalog__button--left">&lt;</button>
         </div>
         <ul class="catalog__list">
-          <li class="catalog__sub-list">
-            <img src="#" alt="Skeleton" class="catalog__photo-item" />
+          <li class="catalog__list-item">
+            <img src="#" alt="Skeleton" class="catalog__item-photo" />
             <p class="catalog__item-price">199$</p>
             <h4 class="catalog__item-name">Name</h4>
             <p class="catalog__item-status">New</p>
           </li>
-          <li class="catalog__list">
-            <img src="#" alt="Mewooo" class="catalog__photo-item" />
+          <li class="catalog__list-item">
+            <img src="#" alt="Mewooo" class="catalog__item-photo" />
             <p class="catalog__item-price">199$</p>
             <h4 class="catalog__item-name">Name</h4>
             <p class="catalog__item-status">New</p>
           </li>
-          <li class="catalog__list">
-            <img class="catalog__photo-item" src="#" alt="Scissors" />
+          <li class="catalog__list-item">
+            <img class="catalog__item-photo" src="#" alt="Scissors" />
             <p class="catalog__item-price">199$</p>
             <h4 class="catalog__item-name">Name</h4>
             <p class="catalog__item-status">Sold Out</p>
           </li>
-          <li class="catalog__list">
-            <img src="#" alt="Drive Box" class="catalog__photo-item" />
+          <li class="catalog__list-item">
+            <img src="#" alt="Drive Box" class="catalog__item-photo" />
             <h4 class="catalog__item-name">Name</h4>
             <p class="catalog__item-price">199$</p>
             <p class="catalog__item-status">New</p>
           </li>
-          <li class="catalog__list">
-            <img src="#" alt="Mother Board" class="catalog__photo-item" />
+          <li class="catalog__list-item">
+            <img src="#" alt="Mother Board" class="catalog__item-photo" />
             <h4 class="catalog__item-price">Name</h4>
             <p class="catalog__item-price">199$</p>
             <p class="catalog__item-status">New</p>
@@ -92,7 +92,7 @@
       </section>
       <!--- Our Blog -->
       <section class="blog">
-        <h3 class="blog__section-title">Our Blog</h3>
+        <h3 class="section-title">Our Blog</h3>
         <article class="blog__kit">
           <img src="#" alt="Girl Face" class="blog__kit-photo" />
           <p class="blog__kit-category">NFT</p>
@@ -105,9 +105,9 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a class="blog__kit-explanation" href="#"> Read More</a>
+          <a class="more-btn" href="#"> Read More</a>
         </article>
-        <article class="blog__kit"> 
+        <article class="blog__kit">
           <img src="#" alt="Monkey" class="blog__kit-photo" />
           <p class="blog__kit-category">NFT</p>
           <p class="blog__kit-author">Tony Nguyen</p>
@@ -117,7 +117,7 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a  class="blog__kit-explanation" href="#"> Read More</a>
+          <a  class="more-btn" href="#"> Read More</a>
         </article>
         <article class="blog__kit" >
           <img src="#" alt="Duck" class="blog__kit-photo" />
@@ -129,7 +129,7 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a class="blog__kit-explanation" href="#"> Read More</a>
+          <a class="more-btn" href="#"> Read More</a>
         </article>
         <article class="blog__kit">
           <img src="#" alt="Skeleton" class="blog__kit-photo" />
@@ -141,7 +141,7 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a class="blog__kit-explanation" href="#"> Read More</a>
+          <a class="more-btn" href="#"> Read More</a>
         </article>
         <article class="blog__kit">
           <img src="#" alt="Cat" class="blog__kit-photo" />
@@ -153,7 +153,7 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a class="blog__kit-explanation" href="#"> Read More</a>
+          <a class="more-btn" href="#"> Read More</a>
         </article>
         <article class="blog__kit" >
           <img src="#" alt="Motherboard"  class="blog__kit-photo"/>
@@ -165,13 +165,13 @@
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a class="blog__kit-explanation" href="#"> Read More</a>
+          <a class="more-btn" href="#"> Read More</a>
         </article>
         <a href="#"> Read More</a>
       </section>
       <!--About Us-->
-      <section class="About-us">
-        <h3 class="about-us__title">About us</h3>
+      <section class="about-us">
+        <h3 class="section-title">About us</h3>
         <p class="about-us__description">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat
@@ -219,200 +219,186 @@
       </section>
       <!--Our Team-->
       <section class="team">
-        <h3 class="team__title">Our Team</h3>
+        <h3 class="section-title">Our Team</h3>
         <ul class="team__list">
-          <li class="team__members">
+          <li class="team__member">
             <div class="team__member-info">
               <img src="#" alt="Pic" class="team__member-image" />
               <h4 class="team__member-name">Jason smith</h4>
               <p class="team__member-role">co-fouder</p>
             </div>
-            <ul class="team__social-links">
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link">
-                  <img src="#" alt="Twitter icon" class="team__social-icon"
+            <ul class="social-links">
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+10:20
+<img src="#" alt="Twitter icon" class="social-icon"
                 /></a>
               </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link">
-                  <img src="#" alt="Facebook icon" class="team__social-icon"
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Facebook icon" class="social-icon"
                 /></a>
               </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link">
-                  <img src="#" alt="Telegram icon" class="team__social-icon"
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Telegram icon" class="social-icon"
                 /></a>
               </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link">
-                  <img src="#" alt="Instagram icon" class="team__social-icon"
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Linkedin icon" class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Instagram icon" class="social-icon"
                 /></a>
               </li>
             </ul>
           </li>
-          <li class="team__social-item">
+          <li class="team__member">
             <div class="team__member-info">
               <img src="#" alt="Pic" class="team__member-image" />
               <h4 class="team__member-name">Jason smith</h4>
               <p class="team__member-role">co-fouder</p>
             </div>
-            <ul class="team__list">
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Twitter icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Facebook icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link">
-                  <img src="#" alt="Telegram icon" class="team__social-icon"
+            <ul class="social-links">
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Twitter icon" class="social-icon"
                 /></a>
               </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Instagram icon" class="team__social-icon" />
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Facebook icon" class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Telegram icon" class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Linkedin icon" class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Instagram icon" class="social-icon"
+                /></a>
               </li>
             </ul>
           </li>
-          <li class="team__social-item">
+          <li class="team__member">
             <div class="team__member-info">
               <img src="#" alt="Pic" class="team__member-image" />
               <h4 class="team__member-name">Jason smith</h4>
               <p class="team__member-role">co-fouder</p>
             </div>
-            <ul class="team__list">
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Twitter icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Facebook icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link">
-                  <img src="#" alt="Telegram icon" class="team__social-icon"
+            <ul class="social-links">
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Twitter icon" class="social-icon"
                 /></a>
               </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Instagram icon" class="team__social-icon" />
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Facebook icon" class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Telegram icon" class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Linkedin icon" class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Instagram icon" class="social-icon"
+                /></a>
               </li>
             </ul>
           </li>
-          <li class="team__social-item">
+          <li class="team__member">
             <div class="team__member-info">
               <img src="#" alt="Pic" class="team__member-image" />
               <h4 class="team__member-name">Jason smith</h4>
               <p class="team__member-role">co-fouder</p>
             </div>
-            <ul class="team__list">
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Twitter icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Facebook icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link">
-                  <img src="#" alt="Telegram icon" class="team__social-icon"
+            <ul class="social-links">
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Twitter icon" class="social-icon"
                 /></a>
               </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Instagram icon" class="team__social-icon" />
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Facebook icon" class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Telegram icon" class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Linkedin icon" class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Instagram icon" class="social-icon"
+                /></a>
               </li>
             </ul>
           </li>
-          <li class="team__social-item">
+          <li class="team__member">
             <div class="team__member-info">
               <img src="#" alt="Pic" class="team__member-image" />
               <h4 class="team__member-name">Jason smith</h4>
               <p class="team__member-role">co-fouder</p>
             </div>
-            <ul class="team__list">
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Twitter icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Facebook icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link">
-                  <img src="#" alt="Telegram icon" class="team__social-icon"
+            <ul class="social-links">
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Twitter icon" class="social-icon"
                 /></a>
               </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Instagram icon" class="team__social-icon" />
-              </li>
-            </ul>
-          </li>
-          <li class="team__social-item">
-            <div class="team__member-info">
-              <img src="#" alt="Pic" class="team__member-image" />
-              <h4 class="team__member-name">Jason smith</h4>
-              <p class="team__member-role">co-fouder</p>
-            </div>
-            <ul class="team__list">
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Twitter icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Facebook icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="" target="_blank" class="team__social-link">
-                  <img src="#" alt="Telegram icon" class="team__social-icon"
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Facebook icon" class="social-icon"
                 /></a>
               </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Instagram icon" class="team__social-icon" />
-              </li>
-            </ul>
-          </li>
-          <li class="team__social-item">
-            <div class="team__member-info">
-              <img src="#" alt="Pic" class="team__member-image" />
-              <h4 class="team__member-name">Jason smith</h4>
-              <p class="team__member-role">co-fouder</p>
-            </div>
-            <ul class="team__list">
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Twitter icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Facebook icon" class="team__social-icon" />
-              </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link">
-                  <img src="#" alt="Telegram icon" class="team__social-icon"
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Telegram icon" class="social-icon"
                 /></a>
               </li>
-              <li class="team__social-item">
-                <a href="#" target="_blank" class="team__social-link"></a>
-                <img src="#" alt="Instagram icon" class="team__social-icon" />
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Linkedin icon" class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="#" target="_blank" class="social-link">
+                  <img src="#" alt="Instagram icon" class="social-icon"
+                /></a>
               </li>
             </ul>
           </li>
         </ul>
       </section>
       <!--FAQ-->
-      <section class="FAQ">
-        <h3 class="FAQ__title">FAQ</h3>
+      <section class="faq">
+        <h3 class="section-title">FAQ</h3>
         <details class="faq__info">
-          <summary class="faq_question">
+          <summary class="faq__question">
             <h4 class="faq__question-text">What are the NFTs?</h4>
           </summary>
           <p class="faq__ansawer">
@@ -431,12 +417,10 @@
             <h4 class="faq__answer-text">How can we buy your NFTs?</h4>
           </summary>
           <p class="faq__answer">NA</p>
-          <p></p>
         </details>
-        <details>
-          <summary><h4>Who are the team behind the project?</h4></summary>
+        <details class="faq__info">
+          <summary class="faq__question"><h4 class="faq__answer-text">Who are the team behind the project?</h4></summary>
           <p class="faq__answer">NA</p>
-          <p></p>
         </details>
       </section>
     </main>
@@ -470,21 +454,44 @@
           </ul>
         </nav>
       </div>
-      <div class="footer__social">
-        <a class="footer__social-link" href="#" target="_blank">
-          <img src="#" alt="Twitter Logo Loading..."
-        class="footer__social-icon"/></a>
-
-        <a class=footer__social-link href="#" target="_blank"
-          ><img src="#" alt="Facebook Logo Loading..."
-        class="footer__social-icon"/></a>
-        <a class="footer__social-link" href="#" target="_blank"
-          ><img src="#" alt="Telegram Logo Loading..."
-          class="footer__social-icon" /></a>
-        <a class="footer__social-link" href="#" target="_blank"
-          ><img src="#" alt="Youtube Logo Loading..." class="footer__social-icon" />
-        </a>
+      <div class="social-links">
+        <li class="social-item">
+          <a href="#" target="_blank" class="social-link">
+            <img src="#" alt="Twitter icon" class="social-icon"
+          /></a>
+        </li>
+        <li class="social-item">
+          <a href="#" target="_blank" class="social-link">
+            <img src="#" alt="Facebook icon" class="social-icon"
+          /></a>
+        </li>
+        <li class="social-item">
+          <a href="#" target="_blank" class="social-link">
+            <img src="#" alt="Telegram icon" class="social-icon"
+          /></a>
+        </li>
+        <li class="social-item">
+          <a href="#" target="_blank" class="social-link">
+            <img src="#" alt="Youtube icon" class="social-icon"
+          /></a>
+        </li>
+        <li class="social-item">
+          <a href="#" target="_blank" class="social-link">
+            <img src="#" alt="Tiktok icon" class="social-icon"
+          /></a>
+        </li>
+        <li class="social-item">
+          <a href="#" target="_blank" class="social-link">
+            <img src="#" alt="Discord icon" class="social-icon"
+          /></a>
+        </li>
       </div>
     </footer>
   </body>
 </html>
+
+
+
+
+
+
