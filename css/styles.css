@@ -8,25 +8,17 @@ body {
 }
   /* Header */
   .header {
-    width: 1728px;
-    height: 112px;
     padding: 32px 32px;
     justify-content: space-between;
     background-color: #1D1C28;
     align-items: center;
   }
-  .header__logo-image {
-    height: 42px;
-    width: 188px;
-  }
+  
   .header__nav {
-    width: 401px;
-    height: 40px;
     gap: 15px;
     align-items: center;
   }
   .header__nav-link {
-    font-family: 'poppins';
     text-decoration: none;
     color: #fff;
     font-weight: 500;
@@ -53,8 +45,6 @@ body {
   }
   /* Hero Section */
   .hero {
-    width: 1728px;
-    height: 640px;
     text-align: center;
     padding: 164px 164px;
     background-color: #1D1C28;
@@ -90,10 +80,6 @@ body {
     vertical-align: bottom;
   }
   /*catalog section */
-  .catalog{
-    width: 1728px;
-    height: 696px;
-  }
 .catalog__title {
    font-family: 'Bakbak One';
     font-size: 24px;
@@ -104,8 +90,6 @@ body {
     gap: 8px;
 }
 .catalog__list-item{
-  width: 300.8px;
-  height: 480px;
   padding: 24px;
   gap: 24px;
 }
@@ -126,11 +110,8 @@ body {
   color: #EFF5FAD1;
 }
   .catalog__item-status {
-    width: 51px;
-    height: 36px;
     border: solid #F5F8FB;
     background-color: #F5F8FB;
-    font-family: 'poppins';
     font-size: 14px;
    line-height: 20px;
    font-weight: 600;
@@ -139,12 +120,7 @@ body {
    text-align: center;
   }
 /* our blog */
-.blog{
-  width: 1728px;
-  height: 2136px;
-}
 .section__title{
-    font-family: 'Bakbak One';
     color:   #F8F7FF;
     font-size:  36px;
     line-height: 48px;
@@ -153,8 +129,6 @@ body {
     text-align: center;
 }
 .blog__kit-category{
-    width: 46px;
-    height: 36px;
     border: solid #F5F8FB;
     background-color: #F5F8FB;
     color:   #0265DC;
@@ -163,7 +137,6 @@ body {
     font-weight: 400;
 }
 .blog__kit-author{
-    font-family: 'poppins';
     color:   #EFF5FAD1;
     font-size: 14px;
     line-height: 20px;
@@ -172,7 +145,6 @@ body {
 }
 
 .blog__kit-datetime{
-    font-family: 'poppins';
     color:   #EFF5FAD1;
     font-size:  14px;
     line-height: 20px;
@@ -180,7 +152,6 @@ body {
     letter-spacing: 0px;
 }
 .blog__kit-title{
-    font-family: 'bakbak one';
     color:   #F5F8FB;
     font-size:  36px;
     line-height: 48px;
@@ -188,7 +159,6 @@ body {
     letter-spacing: -0.5px;
 }
 .blog__kit-description{
-  font-family: 'poppins';
     color:   #EFF5FAD1;
     font-size:  16px;
     line-height: 24px;
@@ -196,8 +166,6 @@ body {
     letter-spacing: 0px;
 }
 .more__btn {
-  width: 161px;
-  height: 40px;
   background-color: transparent;
   border: 2px #D0D7FB2B;
   color:  #EFF5FAD1;
@@ -207,14 +175,7 @@ body {
   letter-spacing: 0px;
 }
   /* About Us Section */
-.about-us {
-  width: 1728px;
-  height: 610.4px;
-} 
   .section-title {
-    width: 1600px;
-    height: 48px;
-    font-family: 'bakbak one';
     color: #F8F7FF;
     font-size: 36px;
     font-weight: 400;
@@ -223,19 +184,11 @@ body {
     text-align: center;
   } 
   .about-us__description {
-    width: 1600px;
-    height: 56px;
-    font-family: 'poppins';
     color: #EFF5FAD1;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
-  } 
-  .about-us__list-item {
-    width: 376px;
-    height: 234px;
-    min-width: 328px;
-  } 
+  }
   .about-us__number {
     font-size: 24px;
     font-weight: 600;
@@ -244,7 +197,6 @@ body {
     opacity: 50%;
   }
   .about-us__list-item-title {
-    font-family: 'bakbak one';
     line-height: 32px;
     font-size: 24px;
     font-weight: 600;
@@ -252,29 +204,22 @@ body {
     letter-spacing: 0px;
   }
   .about-us__item-description {
-    font-family: 'poppins';
     font-size: 18px;
     line-height: 28px;
     color: #EFF5FAD1;
     letter-spacing: 0px;
   }
   .about-us__explanation {
-    width: 149px;
-    height: 48px;
     border: 2px #D0D7FB2B;
     font-family: 'poppins';
     color: #F5F8FB;
   }
 /* Team Section */
 .team {
-  width: 1728px;
-  height: 888px;
   background-color: #1D1C28;
   border-radius: 10px;
 }
 .section-title {
-  width: 1600px;
-  height: 48px;
   font-size: 36px;
   font-weight: 400;
   line-height: 48px;
@@ -283,15 +228,10 @@ body {
   text-align: center;
 }
 .team__list{
-  width: 293px;
-  height: 316px;
   border: 1px transparent;
   color: #1D1C28;
 }
 .team__member-name {
-  font-family: 'poppins';
-  width: 229px;
-  height: 32px;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
@@ -300,7 +240,6 @@ body {
   text-align: center;
 }
 .team__member-role {
-  font-family: 'poppins';
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -308,20 +247,12 @@ body {
     letter-spacing: 0px;
     text-align: center;
 }
-.social-item {
-  width: 229.33px;
-  height: 40px;
-}
+
 .social-link {
     display: inline-block;  
 }
 /* FAQ Section */
-.faq {
-    width: 1728px;
-    height: 720px;
-}
 .section-title {
-  font-family: 'bakbak one';
     font-size: 36px;
     font-weight: 400;
     text-align: center;
@@ -330,14 +261,8 @@ body {
     color: #F8F7FF;
 }
 /* FAQ Details */
-.faq__info {
-    width: 1600px;
-    height: 464px;
-}
-.faq__question {  
-  width: 1600px;
-  height: 152px;
-  font-family: 'bakbak one';
+
+.faq__question { 
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
@@ -346,7 +271,6 @@ body {
   color: #F5F8FB;
 }
 .faq__answer {
-  font-family: 'poppins';
   font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -354,28 +278,18 @@ body {
     letter-spacing: 0px;
 }
 /* Footer Section */
-.footer{
-  width: 1728px;
-  height: 388px;
-}
 .footer__logo-link{
 width: 188px;
 height: 42px;
 }
 .footer__text {
-  font-family: 'poppins';
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0px;
   color: #F5F8FB;
 }
-.footer__nav{
-  width: 152px;
-  height: 156px;
-}
 .footer__nav-title{
-  font-family: 'poppins';
   font-size: 20px;
     line-height: 28px;
     color: #F5F8FB;
@@ -383,18 +297,8 @@ height: 42px;
    letter-spacing: 0px;
 }
 .footer__nav-link{
-  font-family: 'poppins';
   color: #F5F8FB;
   font-weight: 600;
   font-size:12px;
   line-height: 16px;
-}
-.social-item {
-  width: 280px;
-  height: 40px;
-}
-.social-link {
-  width: 24px;
-  height: 24px;
-  display: inline-block; 
 }
