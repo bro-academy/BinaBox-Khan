@@ -1,7 +1,7 @@
 
 /* Global Styles */
 body {
-  font-family: 'poppins Regular', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   background-color: #0D0D15;
   list-style: none;
@@ -10,7 +10,7 @@ body {
   .header {
     width: 1728px;
     height: 112px;
-    padding: 32px,32px;
+    padding: 32px 32px;
     justify-content: space-between;
     background-color: #1D1C28;
     align-items: center;
@@ -26,7 +26,7 @@ body {
     align-items: center;
   }
   .header__nav-link {
-    font-style: 'poppins';
+    font-family: 'poppins';
     text-decoration: none;
     color: #fff;
     font-weight: 500;
@@ -65,7 +65,7 @@ body {
     font-size: 52px;
     font-weight: 400;
     line-height: 62px;
-    letter-spacing: -0.5;
+    letter-spacing: -0.5px;
   }
   .hero__subheading {
     font-family: 'poppins';
@@ -82,23 +82,23 @@ body {
     letter-spacing: -0.5px;
     vertical-align: bottom;
   } 
-  .hero__stat-item,{
+  .hero__stat-item {
     font-family:'poppins';
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400px;
+    font-weight: 400;
     vertical-align: bottom;
   }
   /*catalog section */
   .catalog{
-    width: 1728;
-    height: 696;
+    width: 1728px;
+    height: 696px;
   }
 .catalog__title {
    font-family: 'Bakbak One';
     font-size: 24px;
     line-height: 32px;
-    font-weight: 400px;
+    font-weight: 400;
     color:   #F8F7FF;
     letter-spacing: 0px;
     gap: 8px;
@@ -113,15 +113,15 @@ body {
   font-family: 'Bakbak One';
   font-size: 36px;
   line-height: 48px;
-  weight: 400;
-  letter-spacing: -0.5;
+  font-weight: 400;
+  letter-spacing: -0.5px;
   color: #F5F8FB;
 }
 .catalog__item-name{
   font-family: 'poppins';
    font-size: 20px;
   line-height: 28px;
-   weight: 500;
+   font-weight: 500;
   letter-spacing: 0px;
   color: #EFF5FAD1;
 }
@@ -133,7 +133,7 @@ body {
     font-family: 'poppins';
     font-size: 14px;
    line-height: 20px;
-   weight: 600;
+   font-weight: 600;
    letter-spacing: 0px;
    color: #0265DC;
    text-align: center;
@@ -148,8 +148,8 @@ body {
     color:   #F8F7FF;
     font-size:  36px;
     line-height: 48px;
-    font-weight: 400px;
-    letter-spacing: -0.5;
+    font-weight: 400;
+    letter-spacing: -0.5px;
     text-align: center;
 }
 .blog__kit-category{
@@ -160,14 +160,14 @@ body {
     color:   #0265DC;
     font-size: 14px;
     line-height: 24px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 .blog__kit-author{
     font-family: 'poppins';
     color:   #EFF5FAD1;
     font-size: 14px;
     line-height: 20px;
-    font-weight: 600px;
+    font-weight: 600;
     letter-spacing: 0px;
 }
 
@@ -176,7 +176,7 @@ body {
     color:   #EFF5FAD1;
     font-size:  14px;
     line-height: 20px;
-    font-weight: 600px;
+    font-weight: 600;
     letter-spacing: 0px;
 }
 .blog__kit-title{
@@ -184,7 +184,7 @@ body {
     color:   #F5F8FB;
     font-size:  36px;
     line-height: 48px;
-    font-weight: 400px;
+    font-weight: 400;
     letter-spacing: -0.5px;
 }
 .blog__kit-description{
@@ -192,7 +192,7 @@ body {
     color:   #EFF5FAD1;
     font-size:  16px;
     line-height: 24px;
-    font-weight: 400px;
+    font-weight: 400;
     letter-spacing: 0px;
 }
 .more__btn {
@@ -203,12 +203,12 @@ body {
   color:  #EFF5FAD1;
   font-size:  16px;
   line-height: 24px;
-  font-weight: 600px;
+  font-weight: 600;
   letter-spacing: 0px;
 }
   /* About Us Section */
 .about-us {
-  width: 1728;
+  width: 1728px;
   height: 610.4px;
 } 
   .section-title {
@@ -219,7 +219,7 @@ body {
     font-size: 36px;
     font-weight: 400;
     line-height: 48px;
-    letter-spacing: -0.5;
+    letter-spacing: -0.5px;
     text-align: center;
   } 
   .about-us__description {
@@ -274,11 +274,11 @@ body {
 }
 .section-title {
   width: 1600px;
-  height: 48;
+  height: 48px;
   font-size: 36px;
   font-weight: 400;
   line-height: 48px;
-  letter-spacing: -0.5;
+  letter-spacing: -0.5px;
   color: #F8F7FF;
   text-align: center;
 }
@@ -301,7 +301,7 @@ body {
 }
 .team__member-role {
   font-family: 'poppins';
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     color: #EFF5FAD1;
@@ -309,7 +309,7 @@ body {
     text-align: center;
 }
 .social-item {
-  width: 229.33;
+  width: 229.33px;
   height: 40px;
 }
 .social-link {
@@ -326,7 +326,7 @@ body {
     font-weight: 400;
     text-align: center;
     letter-spacing: -0.5px;
-    margin-bottom: center;
+    text-align: center;
     color: #F8F7FF;
 }
 /* FAQ Details */
@@ -342,7 +342,7 @@ body {
   line-height: 32px;
   letter-spacing: 0px;
   background-color: #1D1C28;
-  backdrop-filter: 20px;
+  backdrop-filter: blur(20px);
   color: #F5F8FB;
 }
 .faq__answer {
