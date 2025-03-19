@@ -1,165 +1,185 @@
-
 /* Global Styles */
 body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   background-color: #0D0D15;
   list-style: none;
+  color: #F8F7FF;
 }
-  /* Header */
-  .header {
-    padding: 32px 32px;
-    justify-content: space-between;
-    background-color: #1D1C28;
-    align-items: center;
-  }
-  
-  .header__nav {
-    gap: 15px;
-    align-items: center;
-  }
-  .header__nav-link {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    align-items: center;
-  }
-  .header__nav-link--active {
-    border-bottom: 2px solid #00aaff;
-  }
-  .header__right .button {
-    padding: 10px 10px;
-    border-radius: 5px;
-    font-size: 18px;
-  }
-  .button--primary {
-    padding: 10px 10px;
-    background-color: #00aaff;
-    color: #fff;
-    border: 2px #D0D7FB2B;
-  }
-  .button--secondary {
-    background-color: transparent;
-    color: white;
-    border: 2px solid #D0D7FB2B;
-  }
-  /* Hero Section */
-  .hero {
-    text-align: center;
-    padding: 164px 164px;
-    background-color: #1D1C28;
-    color: #fff;
-  }
-  .hero__heading {
-    font-family: 'Bakbak One';
-    font-size: 52px;
-    font-weight: 400;
-    line-height: 62px;
-    letter-spacing: -0.5px;
-  }
-  .hero__subheading {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0px;
-  }
-  .hero__stat-number {
-    font-size: 52px;
-    font-weight: 400;
-    line-height: 62px;
-    letter-spacing: -0.5px;
-    vertical-align: bottom;
-  } 
-  .hero__stat-item {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    vertical-align: bottom;
-  }
-  /*catalog section */
+ul{
+  list-style: none;
+  padding: 0;
+}
+.button {
+  font-size: 18px;
+  font-weight: 600;
+  color: #F5F8FB;
+  line-height: 28px;
+  padding: 8px 24px;
+  border: 2px solid transparent;
+}
+.button--primary {
+  background-color: #0265DC;
+  border-color: #0265DC;
+}
+.button--secondary {
+  background-color: transparent;
+  border-color: #D0D7FB2B;
+}
+.more-btn{
+  font-size: 16px;
+  line-height: 24px;
+  color: #F5F8FB;
+  display: inline-block;
+  border: 2px solid #D0D7FB2B;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+.section-title{
+  font-family: 'Bakbak One';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-block: 0 40px;
+}
+/* Header */
+.header {
+  padding: 32px;
+  justify-content: space-between;
+  background-color: #1D1C28;
+}
+.header__nav {
+  gap: 15px;
+}
+.header__nav-link {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  display: inline-block;
+  padding-block: 8px;
+  padding-inline: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+.header__nav-link:hover{
+  color: #3892F3;
+}
+.header__nav-link:active{
+  color: #0054B6;
+}
+.header__nav-link--active {
+  border-bottom: 2px solid #00AAFF;
+}
+/* Hero Section */
+.hero {
+  padding: 164px;
+  background-color: #1D1C28;
+}
+.hero__heading {
+  font-family: 'Bakbak One';
+  margin: 0 0 8px;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+}
+.hero__subheading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0;
+}
+.hero__stat-number {
+  font-family: 'Bakbak One';
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+  margin-block: 0 4px;
+}
+.hero__stat-item {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+/*catalog section */
+.catalog {
+  padding: 70px 64px;
+}
 .catalog__title {
-   font-family: 'Bakbak One';
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 400;
-    color:   #F8F7FF;
-    letter-spacing: 0px;
-    gap: 8px;
+  font-family: 'Bakbak One';
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+.catalog__list{
+  margin-block: 40px 0;
 }
 .catalog__list-item{
   padding: 24px;
-  gap: 24px;
+  background-color: #1D1C28;
 }
 .catalog__item-price {
-
   font-size: 36px;
   line-height: 48px;
-  font-weight: 400;
   letter-spacing: -0.5px;
   color: #F5F8FB;
+  margin-block: 0 8px;
 }
 .catalog__item-name{
-   font-size: 20px;
+  font-size: 20px;
   line-height: 28px;
-   font-weight: 500;
-  letter-spacing: 0px;
+  font-weight: 500;
   color: #EFF5FAD1;
+  margin: 0;
 }
-  .catalog__item-status {
-    border: solid #F5F8FB;
-    background-color: #F5F8FB;
-    font-size: 14px;
-   line-height: 20px;
-   font-weight: 600;
-   letter-spacing: 0px;
-   color: #0265DC;
-   text-align: center;
-  }
+.catalog__item-status {
+  padding: 8px 10px;
+  background-color: #F5F8FB;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #0265DC;
+  text-align: center;
+}
+.catalog__item-status--sold{
+  color: #F5F8FB;
+  background-color: #EA3829;
+}
 /* our blog */
-.section__title{
-    color:   #F8F7FF;
-    font-size:  36px;
-    line-height: 48px;
-    font-weight: 400;
-    letter-spacing: -0.5px;
-    text-align: center;
+.blog {
+  padding: 64px;
 }
 .blog__kit-category{
-    border: solid #F5F8FB;
-    background-color: #F5F8FB;
-    color:   #0265DC;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
+  background-color: #F5F8FB;
+  color: #0265DC;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 8px 10px;
 }
-.blog__kit-author{
-    color:   #EFF5FAD1;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 600;
-    letter-spacing: 0px;
-}
-
-.blog__kit-datetime{
-    color:   #EFF5FAD1;
-    font-size:  14px;
-    line-height: 20px;
-    font-weight: 600;
-    letter-spacing: 0px;
+.blog__kit-details{
+  color: #EFF5FAD1;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-top: 24px;
 }
 .blog__kit-title{
-    color:   #F5F8FB;
-    font-size:  36px;
-    line-height: 48px;
-    font-weight: 400;
-    letter-spacing: -0.5px;
+  font-family: 'Bakbak One';
+  font-weight: 400;
+  color: #F5F8FB;
+  font-size:  36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  margin: 0;
 }
 .blog__kit-description{
-    color:   #EFF5FAD1;
-    font-size:  16px;
-    line-height: 24px;
-    font-weight: 400;
-    letter-spacing: 0px;
+  color: #EFF5FAD1;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
 }
 .more__btn {
   background-color: transparent;
@@ -168,129 +188,171 @@ body {
   font-size:  16px;
   line-height: 24px;
   font-weight: 600;
-  letter-spacing: 0px;
 }
-  /* About Us Section */
-  .section-title {
-    color: #F8F7FF;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 48px;
-    letter-spacing: -0.5px;
-    text-align: center;
-  } 
-  .about-us__description {
-    color: #EFF5FAD1;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-  }
-  .about-us__number {
-    font-size: 24px;
-    font-weight: 600;
-    color: #00aaff;
-    border: 2px #0265DC;
-    opacity: 50%;
-  }
-  .about-us__list-item-title {
-    line-height: 32px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #F8F7FF;
-    letter-spacing: 0px;
-  }
-  .about-us__item-description {
-    font-size: 18px;
-    line-height: 28px;
-    color: #EFF5FAD1;
-    letter-spacing: 0px;
-  }
-  .about-us__explanation {
-    border: 2px #D0D7FB2B;
-    color: #F5F8FB;
-  }
+/* About Us Section */
+.about-us {
+  padding: 64px;
+}
+.about-us__description {
+  color: #EFF5FAD1;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-block: 0 40px;
+}
+.about-us__number {
+  font-size: 24px;
+  font-weight: 600;
+  color: #00AAFF;
+  border: 2px #0265DC;
+  opacity: 50%;
+}
+.about-us__list {
+  margin: 0;
+}
+.about-us__list-item {
+  padding: 32px;
+  background-color: #1A1925;
+}
+.about-us__list-item-title {
+  font-family: 'Bakbak One';
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 24px;
+}
+.about-us__item-description {
+  font-size: 18px;
+  line-height: 28px;
+  color: #EFF5FAD1;
+}
 /* Team Section */
 .team {
-  background-color: #1D1C28;
-  border-radius: 10px;
-}
-.section-title {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 48px;
-  letter-spacing: -0.5px;
-  color: #F8F7FF;
-  text-align: center;
+  padding: 64px;
 }
 .team__list{
-  border: 1px transparent;
-  color: #1D1C28;
+  margin: 0;
+}
+.team__member {
+  background-color: #1D1C28;
+  padding: 32px;
 }
 .team__member-name {
   font-size: 24px;
-  font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0px;
-  color: #f4f4f4;
+  color: #F5F8FB;
   text-align: center;
+  margin: 0;
 }
 .team__member-role {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #EFF5FAD1;
-    letter-spacing: 0px;
-    text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  color: #EFF5FAD1;
+  text-align: center;
+  margin: 0;
 }
-
 .social-link {
-    display: inline-block;  
-}
-/* FAQ Section */
-.section-title {
-    font-size: 36px;
-    font-weight: 400;
-    text-align: center;
-    letter-spacing: -0.5px;
-    text-align: center;
-    color: #F8F7FF;
+  display: inline-block;
 }
 /* FAQ Details */
-
-.faq__question { 
+.faq {
+  padding: 64px;
+}
+.faq__info{
+  background-color: #1D1C28;
+  margin-bottom: 24px;
+  padding: 24px;
+}
+.faq__question-title{
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0px;
-  background-color: #1D1C28;
-  backdrop-filter: blur(20px);
+  font-family: 'Bakbak One';
+  color: #F5F8FB;
+  margin: 0;
+}
+.faq__answer{
+  font-size: 16px;
+  line-height: 24px;
+}
+/* Blog Article */
+.blog-header {
+  text-align: center;
+  padding: 64px;
+}
+.blog-header__title {
+  margin-block: 0 20px;
+}
+.blog-header__nav-item{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 6px 12px;
+  color: #E7EEF7A8;
+}
+.blog-header__nav-link{
+  text-decoration: none;
   color: #F5F8FB;
 }
-.faq__answer {
+.blog-article{
+  padding: 64px;
+}
+.blog-article-sidebar__section{
+  background-color: #1D1C28;
+  padding: 24px;
+  margin-bottom: 21px;
+}
+.blog-article-sidebar__section-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'Bakbak One';
   font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #F5F8FB;
-    letter-spacing: 0px;
+  color: #F5F8FB;
+  margin-block: 0 16px;
+  padding-bottom: 16px;
+}
+.blog-article-sidebar__nav-list {
+  margin: 0;
+}
+.blog-article-sidebar__nav-link {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  color: #F5F8FB;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
 }
 /* Footer Section */
-
+.footer {
+  padding: 64px;
+}
 .footer__text {
   font-size: 14px;
-  font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0px;
   color: #F5F8FB;
 }
 .footer__nav-title{
   font-size: 20px;
-    line-height: 28px;
-    color: #F5F8FB;
-   font-weight: 500;
-   letter-spacing: 0px;
+  line-height: 28px;
+  color: #F5F8FB;
+  font-weight: 500;
+  margin-block: 0 8px;
+}
+.footer__nav-list{
+  margin: 0;
 }
 .footer__nav-link{
+  display: block;
+  padding-block: 4px;
   color: #F5F8FB;
   font-weight: 600;
   font-size:12px;
   line-height: 16px;
+  text-decoration: none;
 }
+.footer__nav-link:hover{
+  color: #3892F3;
+}
+.footer__nav-link:active{
+  color: #0054B6;
