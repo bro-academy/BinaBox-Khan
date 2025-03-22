@@ -1,14 +1,13 @@
 /* Global Styles */
 body {
+  background-color: #0D0D15;
+  color: #F8F7FF;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  background-color: #0D0D15;
-  list-style: none;
-  color: #F8F7FF;
+  line-height: 28px;
   list-style: disc;
   margin-block: 32px;
   margin-inline-start: 32px;
-  line-height: 28px;
 }
 .list {
   list-style: disc;
@@ -424,11 +423,10 @@ ul{
 .blog-article__tag-title{
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #F8F7FF;
 }
 .blog-article__tags-list {
-  margin-block: 32px;
   display: inline;
 }
 .blog-article__list-item {
@@ -437,16 +435,16 @@ ul{
 .blog-article__tags-link {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #F8F7FF;
   border: 2px solid #D0D7FB2B;
-  padding: 6px 12px 6px 12px;
+  padding: 6px 12px;
   margin: 6px;
 }
 .blog-article__share-title{
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #F8F7FF;
 }
 .blog-article__share-list {
