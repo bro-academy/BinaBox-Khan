@@ -1,440 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="BINABOX - The best way to check the rarity
-    of NFT collections. Discover, Explore, and analyze NFTs easily."
-    />
-    <title>HTML AND CSS</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <!--Header-->
-    <header class="header">
-      <header class="header">
-        <div class="header__logo">
-          <a href="#" class="header__logo-link"><img src="#" alt="bina box logo" class="header__logo-image" /></a>
-        </div>
-      <nav class="header__nav">
-        <a href="/" class="header__nav-link header__nav-link--active">Home</a>
-        <a href="#" class="header__nav-link">Blog</a>
-        <a href="#" class="header__nav-link">Catalog</a>
-        <a href="#" class="header__nav-link">Contact us</a>
-      </nav>
-      <div class="header__right">
-        <button class="button button--secondary">
-          <img src="#" alt="Discord" class="button__icon" />Discord
-        </button>
-        <button class="button button--primary">
-          <img src="#" alt="Connect" class="button__icon" />Connect
-        </button>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <h1 class="hero__heading">WITH BINABX EXPLORE NFT COLLECTION</h1>
-        <h2 class="hero__subheading">
-          we are the best way to check rarity of nft colelction
-        </h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BINABOX - The best way to check the rarity
+    of NFT collections. Discover, Explore, and analyze NFTs easily." />
+  <title>HTML AND CSS</title>
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!--Header-->
+  <header class="header">
+    <div class="header__logo">
+      <a href="#" class="header__logo-link"><img src="#" alt="bina box logo" class="header__logo-image" /></a>
+    </div>
+    <nav class="header__nav">
+      <a href="/" class="header__nav-link header__nav-link--active">Home</a>
+      <a href="#" class="header__nav-link">Blog</a>
+      <a href="#" class="header__nav-link">Catalog</a>
+      <a href="#" class="header__nav-link">Contact us</a>
+    </nav>
+    <div class="header__right">
+      <button class="button button--secondary">
+        <img src="#" alt="Discord" class="button__icon" />Discord
+      </button>
+      <button class="button button--primary">
+        <img src="#" alt="Connect" class="button__icon" />Connect
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1 class="hero__heading">WITH BINABOX EXPLORE NFT COLLECTION</h1>
+      <h2 class="hero__subheading">
+        we are the best way to check rarity of nft colelction
+      </h2>
+      <div>
         <p class="hero__stat-number">2240+</p>
         <p class="hero__stat-item">Total item</p>
         <p class="hero__stat-number">1000</p>
-        <p class="hero__label">Profiles Whitelist</p>
+        <p class="hero__stat-item">Profiles Whitelist</p>
+      </div>
+      <div>
         <button class="button button--primary">connect wallet</button>
         <button class="button button--secondary">
           whitelist now
         </button>
-        <img src="#" alt="Cube" class="hero__image" />
-      </section>
-      <!--Catalog-->
-      <section class="catalog">
-        <h3 class="catalog__title">Catalog</h3>
-        <div class="catalog__buttons">
-          <button class="catalog__button catalog__button--all">See All</button>
-          <button class="catalog__button catalog__button--right">&lt;</button>
-          <button class="catalog__button catalog__button--left">&lt;</button>
-        </div>
-        <ul class="catalog__list">
-          <li class="catalog__list-item">
+      </div>
+      <img src="#" alt="Cube" class="hero__image" />
+    </section>
+    <!--Catalog-->
+    <section class="catalog">
+      <h3 class="catalog__title">Catalog</h3>
+      <div class="catalog__buttons">
+        <button class="catalog__button catalog__button--all">See All</button>
+        <button class="catalog__button catalog__button--right">&lt;</button>
+        <button class="catalog__button catalog__button--left">&lt;</button>
+      </div>
+      <ul class="catalog__list">
+        <li class="catalog__list-item">
+          <div>
             <img src="#" alt="Skeleton" class="catalog__item-photo" />
-            <p class="catalog__item-price">199$</p>
-            <h4 class="catalog__item-name">Name</h4>
             <p class="catalog__item-status">New</p>
-          </li>
-          <li class="catalog__list-item">
+          </div>
+          <p class="catalog__item-price">199$</p>
+          <h4 class="catalog__item-name">Name</h4>
+        </li>
+        <li class="catalog__list-item">
+          <div>
             <img src="#" alt="Mewooo" class="catalog__item-photo" />
-            <p class="catalog__item-price">199$</p>
-            <h4 class="catalog__item-name">Name</h4>
             <p class="catalog__item-status">New</p>
-          </li>
-          <li class="catalog__list-item">
+          </div>
+          <p class="catalog__item-price">199$</p>
+          <h4 class="catalog__item-name">Name</h4>
+        </li>
+        <li class="catalog__list-item">
+          <div>
             <img class="catalog__item-photo" src="#" alt="Scissors" />
-            <p class="catalog__item-price">199$</p>
-            <h4 class="catalog__item-name">Name</h4>
-            <p class="catalog__item-status">Sold Out</p>
-          </li>
-          <li class="catalog__list-item">
+            <p class="catalog__item-status catalog__item-status--sold">Sold Out</p>
+          </div>
+          <p class="catalog__item-price">199$</p>
+          <h4 class="catalog__item-name">Name</h4>
+        </li>
+        <li class="catalog__list-item">
+          <div>
             <img src="#" alt="Drive Box" class="catalog__item-photo" />
-            <h4 class="catalog__item-name">Name</h4>
-            <p class="catalog__item-price">199$</p>
             <p class="catalog__item-status">New</p>
-          </li>
-          <li class="catalog__list-item">
+          </div>
+          <h4 class="catalog__item-name">Name</h4>
+          <p class="catalog__item-price">199$</p>
+        </li>
+        <li class="catalog__list-item">
+          <div>
             <img src="#" alt="Mother Board" class="catalog__item-photo" />
-            <h4 class="catalog__item-price">Name</h4>
-            <p class="catalog__item-price">199$</p>
             <p class="catalog__item-status">New</p>
-          </li>
-        </ul>
-      </section>
-      <!--- Our Blog -->
-      <section class="blog">
-        <h3 class="section-title">Our Blog</h3>
-        <article class="blog__kit">
-          <img src="#" alt="Girl Face" class="blog__kit-photo" />
-          <p class="blog__kit-category">NFT</p>
-          <p class="blog__kit-author">Tony Nguyen</p>
-          <time datetime="2022-06-20" class="blog__kit-datetime"
-            >20 jun 2022</time
-          >
-          <h4 class="blog__kit-title">Sonic Live</h4>
-          <p class="blog__kit-description">
-            One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-            nulla imperdiet...
-          </p>
-          <a class="more-btn" href="#"> Read More</a>
-        </article>
-        <article class="blog__kit">
-          <img src="#" alt="Monkey" class="blog__kit-photo" />
-          <p class="blog__kit-category">NFT</p>
-          <p class="blog__kit-author">Tony Nguyen</p>
-          <time class="blog__kit-datetime" datetime="2022-06-20">20 jun 2022</time>
-          <h4 class="blog__kit-title">Sonic Live</h4>
-          <p class="blog__kit-description">
-            One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-            nulla imperdiet...
-          </p>
-          <a  class="more-btn" href="#"> Read More</a>
-        </article>
-        <article class="blog__kit" >
-          <img src="#" alt="Duck" class="blog__kit-photo" />
-          <p class="blog__kit-category" >NFT</p>
-          <p class="blog__kit-author">Tony Nguyen</p>
-          <time class="blog__kit-datetime" datetime="2022-06-20">20 jun 2022</time>
-          <h4 class="blog__kit-title">Sonic Live</h4>
-          <p class="blog__kit-description">
-            One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-            nulla imperdiet...
-          </p>
-          <a class="more-btn" href="#"> Read More</a>
-        </article>
-        <article class="blog__kit">
-          <img src="#" alt="Skeleton" class="blog__kit-photo" />
-          <p class="blog__kit-category">NFT</p>
-          <p class="blog__kit-author">Tony Nguyen</p>
-          <time class="blog__kit-datetime" datetime="2022-06-20">20 jun 2022</time>
-          <h4 class="blog__kit-title">Sonic Live</h4>
-          <p class="blog__kit-description">
-            One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-            nulla imperdiet...
-          </p>
-          <a class="more-btn" href="#"> Read More</a>
-        </article>
-        <article class="blog__kit">
-          <img src="#" alt="Cat" class="blog__kit-photo" />
-          <p class="blog__kit-category">NFT</p>
-          <p class="blog__kit-author">Tony Nguyen</p>
-          <time class="blog__kit-datetime" datetime="2022-06-20">20 jun 2022</time>
-          <h4 class="blog__kit-title">Sonic Live</h4>
-          <p class="blog__kit-description">
-            One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-            nulla imperdiet...
-          </p>
-          <a class="more-btn" href="#"> Read More</a>
-        </article>
-        <article class="blog__kit" >
-          <img src="#" alt="Motherboard"  class="blog__kit-photo"/>
-          <p class="blog__kit-category">NFT</p>
-          <p class="blog__kit-author">Tony Nguyen</p>
-          <time class="blog__kit-datetime" datetime="2022-06-20">20 jun 2022</time>
-          <h4 class="blog__kit-title">Sonic Live</h4>
-          <p class="blog__kit-description">
-            One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-            nulla imperdiet...
-          </p>
-          <a class="more-btn" href="#"> Read More</a>
-        </article>
-        <a href="#"> Read More</a>
-      </section>
-      <!--About Us-->
-      <section class="about-us">
-        <h3 class="section-title">About us</h3>
-        <p class="about-us__description">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat
-          non proident, sunt in culpa qui officia dese runt mollit anim id est
-          laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint
-          occaecat
-        </p>
-        <ul class="about-us__list">
-          <li class="about-us__list-item">
-            <span class="about-us__number">01</span>
-            <h4 class="about-us__list-item-title">High Quality</h4>
-            <p class="about-us__item-description">
-              Lorem Ipsum is simply dummy text of the printing and Ipsum
-              typesetting industry.
-            </p>
-          </li>
-          <li class="about-us__list">
-            <span class="about-us__number">02</span>
-            <h4 class="about-us__list-item-title">Big Collection</h4>
-            <p class="about-us__item-description">
-              Lorem Ipsum is simply dummy text of the printing and Ipsum
-              typesetting industry.
-            </p>
-          </li>
-          <li class="about-us__list">
-            <span class="about-us__number">03</span>
-            <h4 class="about-us__list-item-title">Top resources</h4>
-            <p class="about-us__item-description">
-              Lorem Ipsum is simply dummy text of the printing and Ipsum
-              typesetting industry.
-            </p>
-          </li>
-          <li class="about-us__list">
-            <span class="about-us__number">04</span>
-            <h4 class="about-us__list-item-title">Big Community</h4>
-            <p class="about-us__item-description">
-              Lorem Ipsum is simply dummy text of the printing and Ipsum
-              typesetting industry.
-            </p>
-          </li>
-        </ul>
+          </div>
+          <h4 class="catalog__item-price">Name</h4>
+          <p class="catalog__item-price">199$</p>
+        </li>
+      </ul>
+    </section>
+    <!--- Our Blog -->
+    <section class="blog">
+      <h3 class="section-title">Our Blog</h3>
+      <article class="blog__kit">
         <div>
-          <a href="#" class="about-us__explanation">Read more </a>
+          <img src="#" alt="Girl Face" class="blog__kit-photo" />
+          <span class="blog__kit-category">NFT</span>
         </div>
-      </section>
-      <!--Our Team-->
-      <section class="team">
-        <h3 class="section-title">Our Team</h3>
-        <ul class="team__list">
-          <li class="team__member">
-            <div class="team__member-info">
-              <img src="#" alt="Pic" class="team__member-image" />
-              <h4 class="team__member-name">Jason smith</h4>
-              <p class="team__member-role">co-fouder</p>
-            </div>
-            <ul class="social-links">
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-10:20
-<img src="#" alt="Twitter icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Facebook icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Telegram icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Linkedin icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Instagram icon" class="social-icon"
-                /></a>
-              </li>
-            </ul>
-          </li>
-          <li class="team__member">
-            <div class="team__member-info">
-              <img src="#" alt="Pic" class="team__member-image" />
-              <h4 class="team__member-name">Jason smith</h4>
-              <p class="team__member-role">co-fouder</p>
-            </div>
-            <ul class="social-links">
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Twitter icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Facebook icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Telegram icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Linkedin icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Instagram icon" class="social-icon"
-                /></a>
-              </li>
-            </ul>
-          </li>
-          <li class="team__member">
-            <div class="team__member-info">
-              <img src="#" alt="Pic" class="team__member-image" />
-              <h4 class="team__member-name">Jason smith</h4>
-              <p class="team__member-role">co-fouder</p>
-            </div>
-            <ul class="social-links">
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Twitter icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Facebook icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Telegram icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Linkedin icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Instagram icon" class="social-icon"
-                /></a>
-              </li>
-            </ul>
-          </li>
-          <li class="team__member">
-            <div class="team__member-info">
-              <img src="#" alt="Pic" class="team__member-image" />
-              <h4 class="team__member-name">Jason smith</h4>
-              <p class="team__member-role">co-fouder</p>
-            </div>
-            <ul class="social-links">
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Twitter icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Facebook icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Telegram icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Linkedin icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Instagram icon" class="social-icon"
-                /></a>
-              </li>
-            </ul>
-          </li>
-          <li class="team__member">
-            <div class="team__member-info">
-              <img src="#" alt="Pic" class="team__member-image" />
-              <h4 class="team__member-name">Jason smith</h4>
-              <p class="team__member-role">co-fouder</p>
-            </div>
-            <ul class="social-links">
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Twitter icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Facebook icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Telegram icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Linkedin icon" class="social-icon"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a href="#" target="_blank" class="social-link">
-                  <img src="#" alt="Instagram icon" class="social-icon"
-                /></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <!--FAQ-->
-      <section class="faq">
-        <h3 class="section-title">FAQ</h3>
-        <details class="faq__info">
-          <summary class="faq__question">
-            <h4 class="faq__question-text">What are the NFTs?</h4>
-          </summary>
-          <p class="faq__ansawer">
-            Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
-            Nulla dapibus urna volutpat venenatis, risus faucibus.
+        <div class="blog__kit-details">
+          <span class="blog__kit-author">Tony Nguyen</span>
+          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
+        </div>
+        <h4 class="blog__kit-title">Sonic Live</h4>
+        <p class="blog__kit-description">
+          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+          nulla imperdiet...
+        </p>
+        <a class="more-btn" href="#">Read More</a>
+      </article>
+      <article class="blog__kit">
+        <div>
+          <img src="#" alt="Monkey" class="blog__kit-photo" />
+          <span class="blog__kit-category">NFT</span>
+        </div>
+        <div class="blog__kit-details">
+          <span class="blog__kit-author">Tony Nguyen</span>
+          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
+        </div>
+        <h4 class="blog__kit-title">Sonic Live</h4>
+        <p class="blog__kit-description">
+          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+          nulla imperdiet...
+        </p>
+        <a class="more-btn" href="#">Read More</a>
+      </article>
+      <article class="blog__kit">
+        <div>
+          <img src="#" alt="Duck" class="blog__kit-photo" />
+          <span class="blog__kit-category">NFT</span>
+        </div>
+        <div class="blog__kit-details">
+          <span class="blog__kit-author">Tony Nguyen</span>
+          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
+        </div>
+        <h4 class="blog__kit-title">Sonic Live</h4>
+        <p class="blog__kit-description">
+          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+          nulla imperdiet...
+        </p>
+        <a class="more-btn" href="#">Read More</a>
+      </article>
+      <article class="blog__kit">
+        <div>
+          <img src="#" alt="Skeleton" class="blog__kit-photo" />
+          <span class="blog__kit-category">NFT</span>
+        </div>
+        <div class="blog__kit-details">
+          <span class="blog__kit-author">Tony Nguyen</span>
+          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
+        </div>
+        <h4 class="blog__kit-title">Sonic Live</h4>
+        <p class="blog__kit-description">
+          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+          nulla imperdiet...
+        </p>
+        <a class="more-btn" href="#">Read More</a>
+      </article>
+      <article class="blog__kit">
+        <div>
+          <img src="#" alt="Cat" class="blog__kit-photo" />
+          <span class="blog__kit-category">NFT</span>
+        </div>
+        <div class="blog__kit-details">
+          <span class="blog__kit-author">Tony Nguyen</span>
+          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
+        </div>
+        <h4 class="blog__kit-title">Sonic Live</h4>
+        <p class="blog__kit-description">
+          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+          nulla imperdiet...
+        </p>
+        <a class="more-btn" href="#">Read More</a>
+      </article>
+      <article class="blog__kit">
+        <div>
+          <img src="#" alt="Motherboard" class="blog__kit-photo" />
+          <span class="blog__kit-category">NFT</span>
+        </div>
+        <div class="blog__kit-details">
+          <span class="blog__kit-author">Tony Nguyen</span>
+          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
+        </div>
+        <h4 class="blog__kit-title">Sonic Live</h4>
+        <p class="blog__kit-description">
+          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+          nulla imperdiet...
+        </p>
+        <a class="more-btn" href="#">Read More</a>
+      </article>
+      <div>
+        <a href="#" class="more-btn">Read More</a>
+      </div>
+    </section>
+    <!--About Us-->
+    <section class="about-us">
+      <h3 class="section-title">About us</h3>
+      <p class="about-us__description">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat
+        non proident, sunt in culpa qui officia dese runt mollit anim id est
+        laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint
+        occaecat
+      </p>
+      <ul class="about-us__list">
+        <li class="about-us__list-item">
+          <span class="about-us__number">01</span>
+          <h4 class="about-us__list-item-title">High Quality</h4>
+          <p class="about-us__item-description">
+            Lorem Ipsum is simply dummy text of the printing and Ipsum
+            typesetting industry.
           </p>
-        </details>
-        <details class="faq__info">
-          <summary class="faq__question">
-            <h4 class="faq__question-text">How do i get NFTs?</h4>
-          </summary>
-          <p class="faq__anaswer">NA</p>
-        </details>
-        <details class="faq__info">
-          <summary class="faq__question">
-            <h4 class="faq__answer-text">How can we buy your NFTs?</h4>
-          </summary>
-          <p class="faq__answer">NA</p>
-        </details>
-        <details class="faq__info">
-          <summary class="faq__question"><h4 class="faq__answer-text">Who are the team behind the project?</h4></summary>
-          <p class="faq__answer">NA</p>
-        </details>
-      </section>
-    </main>
-    <!--Footer-->
-    <footer class="footer">
-      <div class="footer__section">
-        <a href="#" class="footer__logo-link"
-          ><img src="#" alt="Bina Box Logo" class="footer__logo"
-        /></a>
+        </li>
+<li class="about-us__list-item">
+          <span class="about-us__number">02</span>
+          <h4 class="about-us__list-item-title">Big Collection</h4>
+          <p class="about-us__item-description">
+            Lorem Ipsum is simply dummy text of the printing and Ipsum
+            typesetting industry.
+          </p>
+        </li>
+        <li class="about-us__list-item">
+          <span class="about-us__number">03</span>
+          <h4 class="about-us__list-item-title">Top resources</h4>
+          <p class="about-us__item-description">
+            Lorem Ipsum is simply dummy text of the printing and Ipsum
+            typesetting industry.
+          </p>
+        </li>
+        <li class="about-us__list-item">
+          <span class="about-us__number">04</span>
+          <h4 class="about-us__list-item-title">Big Community</h4>
+          <p class="about-us__item-description">
+            Lorem Ipsum is simply dummy text of the printing and Ipsum
+            typesetting industry.
+          </p>
+        </li>
+      </ul>
+      <div>
+        <a href="#" class="more-btn">Read more </a>
+      </div>
+    </section>
+    <!--Our Team-->
+    <section class="team">
+      <h3 class="section-title">Our Team</h3>
+      <ul class="team__list">
+        <li class="team__member">
+          <div class="team__member-info">
+            <img src="#" alt="Pic" class="team__member-image" />
+            <h4 class="team__member-name">Jason smith</h4>
+            <p class="team__member-role">co-fouder</p>
+          </div>
+          <ul class="social-links">
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                10:20
+                <img src="#" alt="Twitter icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Facebook icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Telegram icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Linkedin icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Instagram icon" class="social-icon" /></a>
+            </li>
+          </ul>
+        </li>
+        <li class="team__member">
+          <div class="team__member-info">
+            <img src="#" alt="Pic" class="team__member-image" />
+            <h4 class="team__member-name">Jason smith</h4>
+            <p class="team__member-role">co-fouder</p>
+          </div>
+          <ul class="social-links">
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Twitter icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Facebook icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Telegram icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Linkedin icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Instagram icon" class="social-icon" /></a>
+            </li>
+          </ul>
+        </li>
+        <li class="team__member">
+          <div class="team__member-info">
+            <img src="#" alt="Pic" class="team__member-image" />
+            <h4 class="team__member-name">Jason smith</h4>
+            <p class="team__member-role">co-fouder</p>
+          </div>
+          <ul class="social-links">
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Twitter icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Facebook icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Telegram icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Linkedin icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Instagram icon" class="social-icon" /></a>
+            </li>
+          </ul>
+        </li>
+        <li class="team__member">
+          <div class="team__member-info">
+            <img src="#" alt="Pic" class="team__member-image" />
+            <h4 class="team__member-name">Jason smith</h4>
+            <p class="team__member-role">co-fouder</p>
+          </div>
+          <ul class="social-links">
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Twitter icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Facebook icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Telegram icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Linkedin icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Instagram icon" class="social-icon" /></a>
+            </li>
+          </ul>
+        </li>
+        <li class="team__member">
+          <div class="team__member-info">
+            <img src="#" alt="Pic" class="team__member-image" />
+            <h4 class="team__member-name">Jason smith</h4>
+            <p class="team__member-role">co-fouder</p>
+          </div>
+          <ul class="social-links">
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Twitter icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Facebook icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Telegram icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Linkedin icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Instagram icon" class="social-icon" /></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!--FAQ-->
+    <section class="faq">
+      <h3 class="section-title">FAQ</h3>
+      <details class="faq__info">
+        <summary class="faq__question">
+          <h4 class="faq__question-title">What are the NFTs?</h4>
+        </summary>
+        <p class="faq__ansawer">
+          Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+          Nulla dapibus urna volutpat venenatis, risus faucibus.
+        </p>
+      </details>
+      <details class="faq__info">
+        <summary class="faq__question">
+          <h4 class="faq__question-title">How do i get NFTs?</h4>
+        </summary>
+        <p class="faq__anaswer">NA</p>
+      </details>
+      <details class="faq__info">
+        <summary class="faq__question">
+          <h4 class="faq__question-title">How can we buy your NFTs?</h4>
+        </summary>
+        <p class="faq__answer">NA</p>
+      </details>
+      <details class="faq__info">
+        <summary class="faq__question">
+          <h4 class="faq__question-title">Who are the team behind the project?</h4>
+        </summary>
+        <p class="faq__answer">NA</p>
+      </details>
+    </section>
+  </main>
+  <!--Footer-->
+  <footer class="footer">
+    <div class="footer__section">
+      <div>
+        <a href="#" class="footer__logo-link"><img src="#" alt="Bina Box Logo" class="footer__logo" /></a>
         <p class="footer__text">
           We are the best way to check the rarity of nft collection
         </p>
       </div>
-      <div class="footer__section">
+      <div>
         <nav class="footer__nav">
           <h5 class="footer__nav-title">Subscribe</h5>
           <ul class="footer__nav-list">
@@ -443,8 +459,6 @@
             <li class="footer__nav-item"><a href="#" class="footer__nav-link"> Contact us</a></li>
           </ul>
         </nav>
-      </div>
-      <div class="footer__section">
         <nav class="footer__nav">
           <h5 class="footer__nav-title">Company</h5>
           <ul class="footer__nav-list">
@@ -454,44 +468,38 @@
           </ul>
         </nav>
       </div>
+    </div>
+    <div class="footer__section">
+      <div class="footer__text">BINABOX 2022 - ALL rights reserved</div>
       <div class="social-links">
-        <li class="social-item">
-          <a href="#" target="_blank" class="social-link">
-            <img src="#" alt="Twitter icon" class="social-icon"
-          /></a>
-        </li>
-        <li class="social-item">
-          <a href="#" target="_blank" class="social-link">
-            <img src="#" alt="Facebook icon" class="social-icon"
-          /></a>
-        </li>
-        <li class="social-item">
-          <a href="#" target="_blank" class="social-link">
-            <img src="#" alt="Telegram icon" class="social-icon"
-          /></a>
-        </li>
-        <li class="social-item">
-          <a href="#" target="_blank" class="social-link">
-            <img src="#" alt="Youtube icon" class="social-icon"
-          /></a>
-        </li>
-        <li class="social-item">
-          <a href="#" target="_blank" class="social-link">
-            <img src="#" alt="Tiktok icon" class="social-icon"
-          /></a>
-        </li>
-        <li class="social-item">
-          <a href="#" target="_blank" class="social-link">
-            <img src="#" alt="Discord icon" class="social-icon"
-          /></a>
-        </li>
+        <ul>
+          <li class="social-item">
+            <a href="#" target="_blank" class="social-link">
+              <img src="#" alt="Twitter icon" class="social-icon" /></a>
+          </li>
+          <li class="social-item">
+            <a href="#" target="_blank" class="social-link">
+              <img src="#" alt="Facebook icon" class="social-icon" /></a>
+          </li>
+          <li class="social-item">
+            <a href="#" target="_blank" class="social-link">
+              <img src="#" alt="Telegram icon" class="social-icon" /></a>
+          </li>
+          <li class="social-item">
+            <a href="#" target="_blank" class="social-link">
+              <img src="#" alt="Youtube icon" class="social-icon" /></a>
+          </li>
+          <li class="social-item">
+            <a href="#" target="_blank" class="social-link">
+              <img src="#" alt="Tiktok icon" class="social-icon" /></a>
+          </li>
+          <li class="social-item">
+            <a href="#" target="_blank" class="social-link">
+              <img src="#" alt="Discord icon" class="social-icon" /></a>
+          </li>
+        </ul>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
 </html>
-
-
-
-
-
-
