@@ -14,16 +14,18 @@ ul {
   list-style: none;
   padding: 0;
 }
+
 * { 
   box-sizing: border-box;
 }
+
 .container {
   width: 100%;
   max-width: 1728px;
   padding-inline: 64px;
 }
 
-@media (max-width: 768px) {
+@media max-width: 768px {
   .container {
     padding-inline: 24px;
   }
@@ -42,6 +44,7 @@ ul {
   background-color: #0265DC;
   border-color: #0265DC;
 }
+
 .button__button--primary:hover {
   background-color: #3892F3;
 }
@@ -69,6 +72,7 @@ ul {
 .button--secondary:focus {
   background-color: #bfc5ee1f;
 }
+
 .content-link {
   text-decoration: none;
 }
@@ -109,6 +113,10 @@ ul {
 
 .header__nav {
   gap: 15px;
+}
+
+.bina__blue {
+  color:blue;
 }
 
 .header__nav-link {
@@ -162,6 +170,7 @@ ul {
 .hero__stats {
   display: inline-block;
 }
+
 .hero__stat-item {
   font-size: 16px;
   line-height: 24px;
@@ -180,6 +189,7 @@ ul {
 .catalog {
   padding: 70px 64px;
 }
+
 .catalog__title {
   color: #F8F7FF;
   font-size: 24px;
@@ -189,6 +199,7 @@ ul {
   margin-block: 0px;
   text-align: left;
 }
+
 .catalog__hr {
   width: 1167px;
   height: 2px;
@@ -336,6 +347,7 @@ ul {
 .blog {
   padding: 64px;
 }
+
 .blog__kit {
   background-color: #1D1C28;
   display: inline-block;
@@ -353,6 +365,7 @@ ul {
   margin-block: 30px;
   margin-inline: 30px;
 }
+
 .blog__kit-title{
   font-size: 36px;
   line-height: 48px;
@@ -395,11 +408,13 @@ ul {
   letter-spacing: -0.5px;
   margin: 0;
 }
+
 .blog__kit-datetime {
   color: #EFF5FAD1; 
   opacity: 82%;
   line-height: 20px;
 }
+
 .more__btn {
   text-decoration: none;
   font-weight: 600;
@@ -430,10 +445,12 @@ ul {
   background-color: #bfc5ee1f;
   border: 4px solid #3892f3;
 }
+
 .more__btn-rest {
   margin-top: 40px;
   text-align: center;
 }
+
 .more__btn-link {
   text-decoration: none;
   font-weight: 600;
@@ -462,6 +479,7 @@ ul {
   background-color: #bfc5ee1f;
   border: 4px solid #3892f3;
 }
+
 /* About Us Section */
 .about-us {
   padding: 64px;
@@ -480,8 +498,11 @@ ul {
 }
 
 .about-us__list-item {
-  padding: 32px;
+  position: relative;
+  counter-increment: about-counter; 
+  padding-left: 50px; 
   background-color: #1A1925;
+  padding: 32px;
 }
 
 .about-us__list-item-title {
@@ -511,6 +532,10 @@ ul {
   padding: 64px;
 }
 
+.team__member-image {
+  border-radius: 50%;
+}
+
 .team__list {
   margin: 0;
 }
@@ -518,6 +543,10 @@ ul {
 .team__member {
   background-color: #1D1C28;
   padding: 32px;
+  display: inline-block;
+  margin-block: 20px;
+  margin-inline: 20px;
+  text-align: center;
 }
 
 .team__member-name {
@@ -542,13 +571,18 @@ ul {
 
 /* FAQ Section */
 .faq {
-  padding: 64px;
+  padding-top: 64px;
+  padding-inline: 64px;
+  padding-bottom: 104px;
 }
 
 .faq__info {
   background-color: #1D1C28;
-  margin-bottom: 24px;
-  padding: 24px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  padding-inline: 24px;
+  margin-bottom: 10px;
+  backdrop-filter: blur(20px)
 }
 
 .faq__question-title {
@@ -562,6 +596,8 @@ ul {
 .faq__answer {
   font-size: 16px;
   line-height: 24px;
+  margin-block: 16px 0;
+
 }
 
 /* Blog Article Section */
@@ -752,7 +788,8 @@ ul {
 
 /* Footer Section */
 .footer {
-  padding: 64px;
+  background-color: #1A1925;
+  padding: 64px 64px 32px;
 }
 
 .footer__text {
@@ -785,6 +822,10 @@ ul {
 
 .footer__nav-link:hover {
   color: #3892F3;
+}
+
+.footer-nav__link:focus {
+  border: 4px solid #3892f3;
 }
 
 .footer__nav-link:active {
