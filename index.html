@@ -37,33 +37,37 @@
   </header>
   <main>
     <section class="hero">
-      <h1 class="hero__heading">WITH <span class="bina__text--blue"> BINABOX</span> EXPLORE NFT COLLECTION</h1>
+      <h1 class="hero__heading">WITH <span class="text-blue"> BINABOX</span> EXPLORE NFT COLLECTION</h1>
       <h2 class="hero__subheading">
         we are the best way to check rarity of nft colelction
       </h2>
       <div class="hero__stats">
-        <p class="hero__stat-number">2240+</p>
-        <p class="hero__stat-item">Total item</p>
-        <p class="hero__stat-number">1000</p>
-        <p class="hero__stat-item">Profiles Whitelist</p>
-      </div>
-      <div>
-        <button class="button button--primary">connect wallet</button>
-        <button class="button button--secondary">
-          whitelist now
-        </button>
+        <div>
+          <p class="hero__stat-number">2240+</p>
+          <p class="hero__stat-item">Total item</p>
+          <button class="button button--primary">connect wallet</button>
+        </div>
+        <div>
+          <p class="hero__stat-number">1000</p>
+          <p class="hero__stat-item">Profiles Whitelist</p>
+          <button class="button button--secondary">
+            whitelist now
+          </button>
+        </div>
       </div>
       <img src="#" alt="Cube" class="hero__image" />
     </section>
     <!--Catalog-->
     <section class="catalog">
-      <h3 class="catalog__title">Catalog</h3>
-      <div class="catalog__buttons">
-        <button class="catalog__button catalog__button--all">See All</button>
-        <button class="catalog__button catalog__button--right">&lt;</button>
-        <button class="catalog__button catalog__button--left">&lt;</button>
+      <div class="catalog__header">
+        <h3 class="catalog__title">Catalog</h3>
+        <hr class="catalog__hr"/>
+        <div class="catalog__buttons">
+          <button class="catalog__button catalog__button--all">See All</button>
+          <button class="catalog__button catalog__button--right">&lt;</button>
+          <button class="catalog__button catalog__button--left">&lt;</button>
+        </div>
       </div>
-      <hr class="catalog__hr"/>
       <ul class="catalog__list">
         <li class="catalog__list-item">
           <div>
@@ -109,7 +113,7 @@
     </section>
     <!--- Our Blog -->
     <section class="blog">
-      <h3 class="blog__kit-title">Our Blog</h3>
+      <h3 class="section-title">Our Blog</h3>
       <article class="blog__kit">
         <div class="blog__kit-large">
           <img src="#" alt="Girl Face" class="blog__kit-photo" />
@@ -124,7 +128,9 @@
           One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
           nulla imperdiet...
         </p>
-        <a class="more-btn" href="#">Read More</a>
+        <div class="blog__kit-more">
+          <a class="more-btn" href="#">Read More</a>
+        </div>
       </article>
       <article class="blog__kit">
         <div class="blog__kit-small">
@@ -140,7 +146,9 @@
           One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
           nulla imperdiet...
         </p>
-        <a class="more-btn" href="#">Read More</a>
+        <div class="blog__kit-more">
+          <a class="more-btn" href="#">Read More</a>
+        </div>
       </article>
       <article class="blog__kit">
         <div class="blog__kit-small">
@@ -156,7 +164,9 @@
           One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
           nulla imperdiet...
         </p>
-        <a class="more-btn" href="#">Read More</a>
+        <div class="blog__kit-more">
+          <a class="more-btn" href="#">Read More</a>
+        </div>
       </article>
       <article class="blog__kit">
         <div class="blog__kit-small">
@@ -172,9 +182,12 @@
           One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
           nulla imperdiet...
         </p>
-        <a class="more-btn" href="#">Read More</a>
+        <div class="blog__kit-more">
+          <a class="more-btn" href="#">Read More</a>
+        </div>
       </article>
-      <article class="blog__kit">
+22:09
+<article class="blog__kit">
         <div class="blog__kit-small">
           <img src="#" alt="Cat" class="blog__kit-photo" />
           <span class="blog__kit-category">NFT</span>
@@ -188,7 +201,9 @@
           One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
           nulla imperdiet...
         </p>
-        <a class="more-btn" href="#">Read More</a>
+        <div class="blog__kit-more">
+          <a class="more-btn" href="#">Read More</a>
+        </div>
       </article>
       <article class="blog__kit">
         <div class="blog__kit-large">
@@ -204,10 +219,12 @@
           One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
           nulla imperdiet...
         </p>
-        <a class="more__btn" href="#">Read More</a>
+        <div class="blog__kit-more">
+          <a class="more-btn" href="#">Read More</a>
+        </div>
       </article>
-      <div class="more__btn-rest">
-        <a href="#" class="more__btn-link">Read More</a>
+      <div class="more-btn-area">
+        <a href="#" class="more-btn">Read more </a>
       </div>
     </section>
     <!--About Us-->
@@ -254,7 +271,7 @@
           </p>
         </li>
       </ul>
-      <div>
+      <div class="more-btn-area">
         <a href="#" class="more-btn">Read more </a>
       </div>
     </section>
@@ -293,6 +310,64 @@
           </ul>
         </li>
         <li class="team__member">
+          <div class="team__member-info">
+            <img src="#" alt="Pic" class="team__member-image" />
+            <h4 class="team__member-name">Jason smith</h4>
+            <p class="team__member-role">co-fouder</p>
+          </div>
+          <ul class="social-links">
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Twitter icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Facebook icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Telegram icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Linkedin icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Instagram icon" class="social-icon" /></a>
+            </li>
+          </ul>
+        </li>
+        <li class="team__member">
+          <div class="team__member-info">
+            <img src="#" alt="Pic" class="team__member-image" />
+            <h4 class="team__member-name">Jason smith</h4>
+            <p class="team__member-role">co-fouder</p>
+          </div>
+          <ul class="social-links">
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Twitter icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Facebook icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Telegram icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Linkedin icon" class="social-icon" /></a>
+            </li>
+            <li class="social-item">
+              <a href="#" target="_blank" class="social-link">
+                <img src="#" alt="Instagram icon" class="social-icon" /></a>
+            </li>
+          </ul>
+        </li>
+<li class="team__member">
           <div class="team__member-info">
             <img src="#" alt="Pic" class="team__member-image" />
             <h4 class="team__member-name">Jason smith</h4>
@@ -504,3 +579,9 @@
   </footer>
 </body>
 </html>
+
+
+
+
+
+

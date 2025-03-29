@@ -1,8 +1,7 @@
 /* Global Styles */
-* { 
+* {
   box-sizing: border-box;
 }
-
 body {
   background-color: #0D0D15;
   color: #F8F7FF;
@@ -10,18 +9,15 @@ body {
   font-size: 18px;
   line-height: 28px;
 }
-
 ul {
   list-style: none;
   padding: 0;
 }
-
 .container {
   width: 100%;
   max-width: 1728px;
   padding-inline: 64px;
 }
-
 .button {
   font-size: 18px;
   font-weight: 600;
@@ -30,51 +26,45 @@ ul {
   padding: 8px 24px;
   border: 2px solid transparent;
 }
-
 .button--primary {
   background-color: #0265DC;
   border-color: #0265DC;
 }
-
-.button__button--primary:hover {
+.button--primary:hover {
   background-color: #3892F3;
+  border-color: #3892F3;
 }
-
 .button--primary:active {
   background-color: #0054B6;
+  border-color: #0054B6;
 }
-
 .button--primary:focus {
-  background-color: #0265DC; }
-
+  background-color: #0265DC;
+  border-color: #3892F3;
+}
 .button--secondary {
   background-color: transparent;
   border-color: #D0D7FB2B;
 }
-
 .button--secondary:hover {
   background-color: #bfc5ee1f;
 }
-
 .button--secondary:active{
   background-color: #bfc5ee1f;
 }
-
 .button--secondary:focus {
   background-color: #bfc5ee1f;
+  border-color: #3892F3;
 }
-
 .content-link {
   text-decoration: none;
 }
-
 .list {
   list-style: disc;
   margin-block: 32px;
   margin-inline-start: 32px;
   line-height: 28px;
 }
-
 .more-btn {
   font-size: 16px;
   line-height: 24px;
@@ -84,7 +74,10 @@ ul {
   padding: 8px 20px;
   text-decoration: none;
 }
-
+.more-btn-area {
+  margin-top: 40px;
+  text-align: center;
+}
 .section-title {
   font-family: "Bakbak One", "Georgia", sans-serif;
   font-weight: 400;
@@ -94,17 +87,16 @@ ul {
   text-align: center;
   margin-block: 0 40px;
 }
-
+.text-blue{
+  color: #0265DC;
+}
 /* Header */
 .header {
   padding: 32px;
   background-color: #1D1C28;
+  display: flex;
+  justify-content: space-between;
 }
-
-.bina__text--blue {
-  color:blue;
-}
-
 .header__nav-link {
   font-size: 16px;
   line-height: 24px;
@@ -115,19 +107,15 @@ ul {
   color: #fff;
   font-weight: 600;
 }
-
 .header__nav-link:hover {
   color: #3892F3;
 }
-
 .header__nav-link:active {
   color: #0054B6;
 }
-
 .header__nav-link--active {
   border-bottom: 2px solid #00AAFF;
 }
-
 /* Hero Section */
 .hero {
   padding: 164px;
@@ -136,9 +124,8 @@ ul {
     #0265dc80,
     #0265dc00 100%
   ),
-  #0d0d15;
+  #0D0D15;
 }
-
 .hero__heading {
   font-family: "Bakbak One", "Georgia", sans-serif;
   margin: 0 0 8px;
@@ -146,7 +133,6 @@ ul {
   line-height: 62px;
   letter-spacing: -0.5px;
 }
-
 .hero__subheading {
   font-size: 20px;
   font-weight: 500;
@@ -154,15 +140,15 @@ ul {
   margin: 0;
 }
 .hero__stats {
-  display: inline-block;
+  margin-block-start: 32px;
+  display: flex;
+  column-gap: 16px;
 }
-
 .hero__stat-item {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
 }
-
 .hero__stat-number {
   font-family: "Bakbak One", "Georgia", sans-serif;
   font-size: 52px;
@@ -170,12 +156,15 @@ ul {
   letter-spacing: -0.5px;
   margin-block: 0 4px;
 }
-
 /* Catalog Section */
 .catalog {
   padding: 70px 64px;
 }
-
+.catalog__header{
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+}
 .catalog__title {
   color: #F8F7FF;
   font-size: 24px;
@@ -185,37 +174,37 @@ ul {
   margin-block: 0px;
   text-align: left;
 }
-
 .catalog__hr {
-  width: 1167px;
   height: 2px;
   border-radius: 2px;
-  background-color: #D0D7FB2B; 
+  background-color: #D0D7FB2B;
+  margin: 0;
+  border: none;
+  width: 100%;
 }
-
+.catalog__buttons {
+  display: flex;
+}
 .catalog__button--all {
   background-color: transparent;
   border: 2px solid; color: #D0D7FB2B;
   padding-block: 10px;
   padding-inline: 24px;
   margin-right: 24px;
+  white-space: nowrap;
 }
-
 .catalog__button--all:hover {
   background-color: #bfc5ee1f;
   border: 2px solid #bfc5ee1f;
 }
-
 .catalog__button--all:active {
   background-color: #bfc5ee1f;
   border: 2px solid #bfc5ee1f;
 }
-
 .catalog__button--all:focus {
   background-color: #bfc5ee1f;
-  border: 4px solid #3892f3;
+  border: 4px solid #3892F3;
 }
-
 .catalog__button--all {
   color: #F5F8FB;
   font-weight: 600;
@@ -224,82 +213,71 @@ ul {
   letter-spacing: 0px;
   text-align: center;
 }
-
 .catalog__controls-separator {
   width: 2px;
   height: 24px;
   border-radius: 2px;
   background-color: #D0D7FB2B;
 }
-
 .catalog__button--left {
   background-color: transparent;
   border: 2px solid; color: #D0D7FB2B;
   padding-block: 16px;
 }
-
 .catalog__button--left:hover {
   background-color: #bfc5ee1f;
   border: 2px solid #bfc5ee1f;
 }
-
 .catalog__button--left:active {
   background-color: #bfc5ee1f;
   border: 2px solid #bfc5ee1f;
 }
-
 .catalog__button--left:focus {
   background-color: #bfc5ee1f;
-  border: 4px solid #3892f3;
+  border: 4px solid #3892F3;
 }
-
 .catalog__button--left-text {
   color: #F5F8FB;
   top: 5px;
   left: 8px;
 }
-
 .catalog__button--right {
   background-color: #0265DC;
   padding-block: 16px;
   color: #F5F8FB;
 }
-
 .catalog__button--right:hover {
   background-color: #3892F3;
 }
-
 .catalog__button--right:active {
   background-color: #0054B6;
 }
-
 .catalog__button--right:focus {
   background-color: #0265DC;
   border: 4px solid #3892F3;
 }
-
 .catalog__button--right-text {
   color: #0D0D15;
   top: 5px;
   left: 8px;
 }
-
+.catalog__list{
+  display: flex;
+  gap: 24px;
+}
 .catalog__list-item {
   background-color: #1D1C28;
-  display: flex;
   padding: 24px;
-  display: inline-block;
+  width: 100%;
 }
-
 .catalog__item-name {
-  color: #EFF5FAD1; 
+  color: #EFF5FAD1;
   opacity: 82%;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
   margin-block: 0px;
 }
-
 .catalog__item-price {
   font-size: 36px;
   line-height: 48px;
@@ -307,7 +285,6 @@ ul {
   font-family: "Bakbak One", "Georgia", sans-serif;
   margin-block: 0px;
 }
-
 .catalog__item-status {
   background-color: #F5F8FB;
   padding-block: 8px;
@@ -318,7 +295,6 @@ ul {
   text-align: center;
   display: inline-block
 }
-
 .catalog__item-status--sold {
   background-color:#EA3829;
   color: #F5F8FB;
@@ -328,38 +304,34 @@ ul {
   line-height: 20px;
   text-align: center;
 }
-
 /* Blog Section */
 .blog {
   padding: 64px;
 }
-
 .blog__kit {
   background-color: #1D1C28;
   display: inline-block;
 }
-
 .blog__kit--large {
   min-width: 512px;
   padding: 24px;
   margin-block: 24px;
   margin-inline: 24px;
 }
-
 .blog__kit-small {
   padding: 24px;
   margin-block: 30px;
   margin-inline: 30px;
 }
-
 .blog__kit-title{
+  color: #F5F8FB;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0px;
   font-family: "Bakbak One", "Georgia", sans-serif;
-  margin-bottom: 10px;
+  margin-block-start: 16px;
+  margin-block-end: 0px;
 }
-
 .blog__kit-category {
   background-color: #F5F8FB;
   color: #0265DC;
@@ -369,14 +341,12 @@ ul {
   display: inline-block;
   padding: 8px 10px;
 }
-
 .blog__kit-description {
   color: #EFF5FAD1;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
 }
-
 .blog__kit-details {
   color: #EFF5FAD1;
   font-size: 14px;
@@ -384,93 +354,18 @@ ul {
   font-weight: 600;
   margin-top: 24px;
 }
-
-.blog__kit-title {
-  font-family: "Bakbak One", "Georgia", sans-serif;
-  font-weight: 400;
-  color: #F5F8FB;
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: -0.5px;
-  margin: 0;
-}
-
 .blog__kit-datetime {
-  color: #EFF5FAD1; 
+  color: #EFF5FAD1;
   opacity: 82%;
   line-height: 20px;
 }
-
-.more__btn {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #F5F8FB;
-  border: 2px solid #D0D7FB2B;
-  text-align: center;
-  padding-block: 8px;
-  padding-inline: 20px;
+.blog__kit-more {
+  margin-block-start: 16px;
 }
-
-.more__btn:hover {
-  color: #f5f8fb;
-  background-color: #bfc5ee1f;
-  border: 2px solid #bfc5ee1f;
-}
-
-.more__btn:active {
-  color: #f5f8fb;
-  background-color: #bfc5ee1f;
-  border: 2px solid #bfc5ee1f;
-  border: 4px solid #3892f3;
-}
-
-.more__btn:focus {
-  color: #f5f8fb;
-  background-color: #bfc5ee1f;
-  border: 4px solid #3892f3;
-}
-
-.more__btn-rest {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.more__btn-link {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  color: #F5F8FB;
-  border: 2px solid #D0D7FB2B;
-  padding-block: 10px;
-  padding-inline: 24px;
-}
-
-.more__btn-link:hover {
-  color: #f5f8fb;
-  background-color: #bfc5ee1f;
-  border: 2px solid #bfc5ee1f;
-}
-
-.more__btn-link:active {
-  color: #f5f8fb;
-  background-color: #bfc5ee1f;
-  border: 2px solid #bfc5ee1f;
-}
-
-.more__btn-link:focus {
-  color: #f5f8fb;
-  background-color: #bfc5ee1f;
-  border: 4px solid #3892f3;
-}
-
 /* About Us Section */
 .about-us {
   padding: 64px;
 }
-
 .about-us__description {
   color: #EFF5FAD1;
   font-size: 20px;
@@ -478,19 +373,18 @@ ul {
   text-align: center;
   margin-block: 0 40px;
 }
-
 .about-us__list {
   margin: 0;
+  display: flex;
+  gap: 32px;
 }
-
 .about-us__list-item {
   position: relative;
-  counter-increment: about-counter; 
-  padding-left: 50px; 
+  counter-increment: about-counter;
+  padding-left: 50px;
   background-color: #1A1925;
   padding: 32px;
 }
-
 .about-us__list-item-title {
   font-family: "Bakbak One", "Georgia", sans-serif;
   line-height: 32px;
@@ -498,13 +392,11 @@ ul {
   font-weight: 600;
   margin: 0 0 24px;
 }
-
 .about-us__item-description {
   font-size: 18px;
   line-height: 28px;
   color: #EFF5FAD1;
 }
-
 .about-us__number {
   font-size: 24px;
   font-weight: 600;
@@ -512,29 +404,22 @@ ul {
   border: 2px #0265DC;
   opacity: 50%;
 }
-
 /* Team Section */
 .team {
   padding: 64px;
 }
-
 .team__member-image {
   border-radius: 50%;
 }
-
 .team__list {
   margin: 0;
 }
-
 .team__member {
   background-color: #1D1C28;
   padding: 32px;
   display: inline-block;
-  margin-block: 20px;
-  margin-inline: 20px;
   text-align: center;
 }
-
 .team__member-name {
   font-size: 24px;
   line-height: 28px;
@@ -542,7 +427,6 @@ ul {
   text-align: center;
   margin: 0;
 }
-
 .team__member-role {
   font-size: 18px;
   line-height: 28px;
@@ -550,18 +434,15 @@ ul {
   text-align: center;
   margin: 0;
 }
-
 .social-link {
   display: inline-block;
 }
-
 /* FAQ Section */
 .faq {
   padding-top: 64px;
   padding-inline: 64px;
   padding-bottom: 104px;
 }
-
 .faq__info {
   background-color: #1D1C28;
   padding-top: 24px;
@@ -570,7 +451,6 @@ ul {
   margin-bottom: 10px;
   backdrop-filter: blur(20px)
 }
-
 .faq__question-title {
   font-size: 24px;
   line-height: 32px;
@@ -578,51 +458,42 @@ ul {
   color: #F5F8FB;
   margin: 0;
 }
-
 .faq__answer {
   font-size: 16px;
   line-height: 24px;
   margin-block: 16px 0;
-
 }
-
 /* Blog Article Section */
 .blog-article {
   padding: 64px;
 }
-
 .blog-article__caption {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   color: #F8F7FF;
 }
-
 .blog-article__content {
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
   color: #F8F7FF;
 }
-
 .blog-article__content-strong {
   font-size: 18px;
   line-height: 28px;
   color: #78BBFA;
 }
-
 .blog-article__content-strong--pl {
   font-size: 18px;
   line-height: 28px;
   background-color: #0265DC;
 }
-
 .blog-article__quote {
   padding: 8px;
   border-radius: 16px;
   background-color: #002754;
 }
-
 .blog-article__quote-blockquote {
   font-family: "Bakbak One", "Georgia", sans-serif;
   font-weight: 400;
@@ -631,21 +502,18 @@ ul {
   vertical-align: bottom;
   color: #F8F7FF;
 }
-
 .blog-article__quote-rating-score {
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
   color: #EFF5FAD1;
 }
-
 .blog-article__quote-rating-source {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   color: #F8F7FF;
 }
-
 .blog-article__subtitle {
   font-family: "Bakbak One", "Georgia", sans-serif;
   font-size: 28px;
@@ -654,19 +522,16 @@ ul {
   color: #F8F7FF;
   margin-block: 16px;
 }
-
 .blog-article__tag-title {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #F8F7FF;
 }
-
 .blog-article__tags-list {
-  display: flex; 
-  gap: 10px; 
+  display: flex;
+  gap: 10px;
 }
-
 .blog-article__tags-link {
   font-size: 16px;
   line-height: 24px;
@@ -674,9 +539,7 @@ ul {
   color: #F8F7FF;
   border: 2px solid #D0D7FB2B;
   padding: 6px 12px;
-  margin: 6px;
 }
-
 .blog-article__title {
   font-family: "Bakbak One", "Georgia", sans-serif;
   font-size: 36px;
@@ -685,51 +548,42 @@ ul {
   letter-spacing: -0.5px;
   color: #F8F7FF;
 }
-
 .blog-article__author-name {
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
   color: #EFF5FAD1;
 }
-
 .blog__article-datetime {
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
   color: #EFF5FAD1;
 }
-
 .blog-article__list {
   margin-block: 32px;
   display: inline;
 }
-
 .blog-article__list-item {
   margin-block-end: 8px;
 }
-
 .blog-article__share-title {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #F8F7FF;
 }
-
 .blog-article__share-list {
   list-style: none;
 }
-
 .blog-article__share-link {
   display: inline-block;
 }
-
 .blog-article-sidebar__section {
   background-color: #1D1C28;
   padding: 24px;
   margin-bottom: 21px;
 }
-
 .blog-article-sidebar__section-title {
   font-size: 24px;
   line-height: 32px;
@@ -739,11 +593,9 @@ ul {
   margin-block: 0 16px;
   padding-bottom: 16px;
 }
-
 .blog-article-sidebar__nav-list {
   margin: 0;
 }
-
 .blog-article-sidebar__nav-link {
   font-size: 14px;
   line-height: 20px;
@@ -753,16 +605,13 @@ ul {
   font-weight: 600;
   padding: 6px 12px;
 }
-
 .blog-header {
   text-align: center;
   padding: 64px;
 }
-
 .blog-header__title {
   margin-block: 0 20px;
 }
-
 .blog-header__nav-item {
   display: inline-block;
   font-size: 14px;
@@ -771,24 +620,20 @@ ul {
   padding: 6px 12px;
   color: #E7EEF7A8;
 }
-
 .blog-header__nav-link {
   text-decoration: none;
   color: #F5F8FB;
 }
-
 /* Footer Section */
 .footer {
   background-color: #1A1925;
   padding: 64px 64px 32px;
 }
-
 .footer__text {
   font-size: 14px;
   line-height: 20px;
   color: #F5F8FB;
 }
-
 .footer__nav-title {
   font-size: 20px;
   line-height: 28px;
@@ -796,11 +641,9 @@ ul {
   font-weight: 500;
   margin-block: 0 8px;
 }
-
 .footer__nav-list {
   margin: 0;
 }
-
 .footer__nav-link {
   display: block;
   padding-block: 4px;
@@ -810,15 +653,12 @@ ul {
   line-height: 16px;
   text-decoration: none;
 }
-
 .footer__nav-link:hover {
   color: #3892F3;
 }
-
 .footer-nav__link:focus {
-  border: 4px solid #3892f3;
+  border: 4px solid #3892F3;
 }
-
 .footer__nav-link:active {
   color: #0054B6;
 }
