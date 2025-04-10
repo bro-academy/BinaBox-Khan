@@ -39,6 +39,3 @@ export default {
     ],
   },
 };
-en.bem.infoen.bem.info
-Naming convention / Methodology / BEM
-Naming convention
