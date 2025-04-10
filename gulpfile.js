@@ -5,10 +5,11 @@ import { parseArgs } from 'node:util'
 import { src, series, parallel, dest, watch, lastRun } from 'gulp'
 import { deleteAsync } from 'del'
 import gulpif from 'gulp-if'
-import filesize from 'gulp-filesize'
+import size from 'gulp-size'
 import rename from 'gulp-rename'
 import data from 'gulp-data'
 import sharpResponsive from 'gulp-sharp-responsive'
+import svgo from 'gulp-svgo'
 import * as dartSass from 'sass'
 import gulpSass from 'gulp-sass'
 import postcss from 'gulp-postcss'
@@ -24,36 +25,36 @@ import htmlLint from 'gulp-html-lint'
 import chalk from 'chalk'
 import table from 'text-table'
 import bs from 'browser-sync'
-
 const dev = 'src/';
 const dist = 'public/';
-
 const paths = {
   viewsDir: dev + 'templates/',
   distDir: dist,
   dev: {
-    scss:  dev+'styles/**/*.scss',
-    styles: dev+'styles/pages/*.scss',
+    scss:  dev+'styles/**/*.{css,scss}',
+    styles: dev+'styles/pages/*.{css,scss}',
     svg: dev+'images/sprite/*.svg',
-    views: dev+'templates/**/*.njk',
+    views: dev+'templates/**/*.{json,njk,html}',
     pages: dev+'templates/pages/*/*.{njk,html}',
-    images: dev+'images/static/**/*.{jpg,jpeg,png,svg}',
+    modernImages: dev+'images/static/**/*.{webp,avif}',
+    svgStatic: dev+'images/static/**/*.svg',
+    images: dev+'images/static/**/*.{jpg,jpeg,png}',
   },
   dist: {
       pages: dist,
       styles: dist+'css',
       scripts: dist+'js',
       images: dist+'img',
-      svg: dist+'img'
   }
 };
-
 const config = {
   devPort: 8080,
   uiPort: 7171
 };
+const sizeOptions = {
+  showFiles: true,
+}
 const sass = gulpSass(dartSass)
-
 const { values:args } = parseArgs({
   options: {
     lint: {
@@ -76,25 +77,19 @@ const { values:args } = parseArgs({
   strict: false,
   allowPositionals: true,
 })
-
 const isDev = env.NODE_ENV === 'development'
-
 export const clean = () => deleteAsync([paths.distDir])
-
 const getDataForFile = (file) => {
   const filePath = join(cwd(), paths.viewsDir, 'pages', dirname(file.relative), 'data.json');
   let fileContent
-
   try {
     fileContent = readFileSync(filePath, 'utf8')
   } catch (error) {
     fileContent = "{}"
     if (args.debug) console.warn(error.message)
   }
-
   return JSON.parse(fileContent)
 };
-
 function htmllintReporter(results) {
   function pluralize(word, count) {
     return (count === 1 ? word : `${word}s`);
@@ -104,14 +99,11 @@ function htmllintReporter(results) {
     errors = 0,
     warnings = 0,
     summaryColor = 'yellow';
-
   results.forEach((result) => {
     const issues = result.issues;
-
     if (issues.length === 0) {
       return;
     }
-
     total += issues.length;
     output += chalk.underline(result.relativeFilePath) + '\n';
     output += table(
@@ -125,7 +117,6 @@ function htmllintReporter(results) {
           messageType = chalk.yellow('warning');
           warnings++;
         }
-
         return [
           '',
           issue.line || 0,
@@ -144,7 +135,6 @@ function htmllintReporter(results) {
       });
     }).join('\n') + '\n\n';
   });
-
   if (total > 0) {
     output += chalk[summaryColor].bold([
       '\u2716 ', total, pluralize(' problem', total),
@@ -152,10 +142,8 @@ function htmllintReporter(results) {
       warnings, pluralize(' warning', warnings), ')\n'
     ].join(''));
   }
-
   return total > 0 ? output : '';
 }
-
 export const styles = () =>
   src(paths.dev.styles, { sourcemaps: true, since: lastRun(styles) })
     .pipe(sass({
@@ -175,53 +163,98 @@ export const styles = () =>
       })
     ], { syntax: postcssScss }))
     .pipe(dest(paths.dist.styles, { sourcemaps: true }))
-    .pipe(gulpif(args.debug, filesize()))
+    .pipe(gulpif(args.debug, size(sizeOptions)))
     .pipe(bs.stream())
-
-export const images = () =>
+export const copyImages = () =>
+  src(paths.dev.modernImages, { since: lastRun(copyImages), encoding: false })
+    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Unotimised (modern raster): '})))
+    .pipe(sharpResponsive({
+      formats: [
+        {
+          format: 'webp',
+          rename: { suffix: "-2x" },
+          webpOptions: { lossless: true }
+        },
+        {
+          format: 'avif',
+          rename: { suffix: "-2x" },
+          avifOptions: { lossless: true }
+        },
+        {
+          format: 'webp',
+          rename: { suffix: "-1x" },
+          webpOptions: { lossless: true },
+          width: (metadata) => Math.round(metadata.width * 0.5),
+        },
+        {
+          format: 'avif',
+          rename: { suffix: "-1x" },
+          avifOptions: { lossless: true },
+          width: (metadata) => Math.round(metadata.width * 0.5),
+        },
+      ]
+    }))
+    .pipe(dest(paths.dist.images))
+    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimized (modern raster): '})))
+    .pipe(bs.stream())
+export const optimizeVectorImages = () =>
+  src(paths.dev.svgStatic)
+    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Unotimised (vector): '})))
+    .pipe(svgo({
+      plugins: [{
+        cleanupNumericValues: {
+          floatPrecision: 0
+        }
+      }]
+    }))
+    .pipe(dest(paths.dist.images))
+    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimised (vector): '})))
+    .pipe(bs.stream())
+export const optimizeRasterImages = () =>
   src(paths.dev.images, { since: lastRun(images), encoding: false })
+    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Unotimised (raster): '})))
     .pipe(sharpResponsive({
       formats: [
         { format: 'webp', rename: { suffix: "-2x" } },
         { format: 'avif', rename: { suffix: "-2x" } },
-        { width: (metadata) => metadata.width * 0.5, format: 'webp', rename: { suffix: "-1x" } },
-        { width: (metadata) => metadata.width * 0.5, format: 'avif', rename: { suffix: "-1x" } },
+        { width: (metadata) => Math.round(metadata.width * 0.5), format: 'webp', rename: { suffix: "-1x" } },
+        { width: (metadata) => Math.round(metadata.width * 0.5), format: 'avif', rename: { suffix: "-1x" } },
       ]
     }))
     .pipe(dest(paths.dist.images))
+    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimised (raster): '})))
     .pipe(bs.stream())
-
+export const images = parallel(copyImages, optimizeRasterImages, optimizeVectorImages)
 export const sprite = () =>
   src(paths.dev.svg)
     .pipe(gulpSvgSprite({
       mode: {
         symbol: {
           dest: '.',
-          sprite: join(paths.dist.svg, 'sprite.svg'),
+          sprite: join(paths.dist.images, 'sprite.svg'),
           dimensions: false,
           bust: false
         }
       }
     }))
     .pipe(dest('.'))
+    .pipe(gulpif(args.debug, size({...sizeOptions, title: 'Optimised: '})))
     .pipe(bs.stream())
-
 export const markup = () =>
-  src(paths.dev.pages, { since: lastRun(markup) })
+  src(paths.dev.pages)
     .pipe(data(getDataForFile))
     .pipe(nunjucks({
       path: paths.viewsDir
     }))
-    .pipe(htmlLint({
+    .pipe(gulpif(args.lint, htmlLint({
       htmllintrc: ".htmllintrc.json",
       useHtmllintrc: true,
-    }))
+    })))
     .pipe(htmlLint.format(htmllintReporter))
     .pipe(rename({ dirname: '' }))
     .pipe(dest(paths.dist.pages))
-    .pipe(gulpif(args.debug, filesize()))
+    .pipe(gulpif(args.debug, size(sizeOptions)))
     .pipe(bs.stream())
-
 export const liveReload = () =>
   bs.init({
     port: config.devPort,
@@ -237,24 +270,28 @@ export const liveReload = () =>
     notify: false,
     open: args.open ? 'external' : false,
     baseDir: paths.distDir,
-    server: ['.', paths.distDir]
+    watch: true,
+    server: paths.distDir
   })
-
 export const build = series(clean, parallel(styles, images, sprite, markup))
-
 const watchFiles = (cb) => {
   watch(paths.dev.scss, { delay: 1000 }, styles)
-  watch(paths.dev.images, { delay: 1000 }, images)
-  watch(paths.dev.svg, { delay: 1000 }, sprite)
-  watch(paths.dev.views, { delay: 1000 }, markup)
+  watch(paths.dev.images, images)
+  watch(paths.dev.svg, sprite)
+  watch(paths.dev.views, markup)
   cb()
 }
 export { watchFiles as watch }
-
 export const serve = series(
   build,
   watchFiles,
   liveReload,
 )
-
 export default build
+
+
+
+
+
+
+
