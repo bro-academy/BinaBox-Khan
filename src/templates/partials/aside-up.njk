@@ -1,0 +1,12 @@
+<section class="ak">
+  <h3 class="">{{ asideUpper.title }}</h3>
+  <nav class="">
+    <ul class="">
+      {% for item in asideUpper.item %}
+      <li class="">
+        <a class="" href="{{ item.link }}">{{ item.text }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</section>

@@ -1,1 +1,26 @@
-header
+<header class="header container">
+  <div class="">
+    <a class="" href="{{ header.logolink }}">
+      <img
+        class="header-logo__image"
+        src="{{ header.logoimg }}"
+        alt="{{ header.logoalt }}"
+        loading="eager"
+      />
+    </a>
+  </div>
+  <nav class="">
+    <ul class="">
+      {% for item in header.nav %}
+      <li class="">
+        <a
+          class="main-nav-list__list-link{% if item.text == currentPage %} main-nav-list__list-link--active{% endif %}"
+          href="{{ item.link }}"
+          >{{ item.text }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="">{% include "partials/header-buttons.njk" %}</div>
+</header>

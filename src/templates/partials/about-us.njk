@@ -1,0 +1,13 @@
+<section class="">
+  <h3 class="">{{ aboutSection.sectionTitle }}</h3>
+  <p class="about__description">{{ aboutSection.sectionDescription }}</p>
+  <ul class="">
+    {% for item in aboutCard %}
+    <li class="about-list__item">
+      <h4 class="">{{ item.title }}</h4>
+      <p class="">{{ item.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  {% include "partials/cta-more.njk" %}
+</section>

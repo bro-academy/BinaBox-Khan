@@ -1,0 +1,10 @@
+<section class="">
+  <h4 class="">{{ asideLower.title }}</h4>
+  <ul class="">
+    {% for item in asideLower.item %}
+    <li class="">
+      <a class="" href="{{ item.link }}">{{ item.text }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
