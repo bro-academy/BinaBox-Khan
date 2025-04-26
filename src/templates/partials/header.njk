@@ -1,26 +1,20 @@
-<header class="header container">
-  <div class="">
-    <a class="" href="{{ header.logolink }}">
-      <img
-        class="header-logo__image"
-        src="{{ header.logoimg }}"
-        alt="{{ header.logoalt }}"
-        loading="eager"
-      />
-    </a>
+<header class="header">
+  <div class="header__logo">
+      <a href="#" class="header__logo-link">
+      <img src="#" alt="box logo"  class="header__logo-image" /></a>
   </div>
-  <nav class="">
-    <ul class="">
-      {% for item in header.nav %}
-      <li class="">
-        <a
-          class="main-nav-list__list-link{% if item.text == currentPage %} main-nav-list__list-link--active{% endif %}"
-          href="{{ item.link }}"
-          >{{ item.text }}</a
-        >
-      </li>
-      {% endfor %}
-    </ul>
+  <nav class="header__nav">
+      <a href="/" class="header__nav-link header__nav-link--active">Home</a>
+      <a href="#" class="header__nav-link">Blog</a>
+      <a href="#" class="header__nav-link">Catalog</a>
+      <a href="#" class="header__nav-link">Contact us</a>
   </nav>
-  <div class="">{% include "partials/header-buttons.njk" %}</div>
-</header>
+  <div class="header__right">
+      <button class="button button--secondary">
+      <img src="#" alt="Discord" class="button__icon" />Discord
+      </button>
+      <button class="button button--primary">
+      <img src="#" alt="Connect" class="button__icon" />Connect
+      </button>
+  </div>
+  </header>
