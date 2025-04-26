@@ -1,21 +1,24 @@
-{% set currentPage = "Blog" %} {% extends "" %} {% set title =
-"BINABOX - The Basilisks NFT & Crypto Gaming Insights" %} {% set description =
-"Explore the latest insights on NFTs, blockchain gaming, and metaverse trends.
-Learn about The Basilisks NFT, digital assets, and how they shape the future of
-gaming and crypto." %} {% set page = "" %} {% block content %}
+{% set currentPage = "Home" %}
+ {% extends "layouts/base.njk" %}
+{% set title =
+"BINABOX - NFT Rarity Checker" %} {% set description = "BINABOX - The best way
+to check the rarity of NFT collections. Discover, explore, and analyze NFTs
+easily." %}
+{% set page = "home" %}
+{% block content %}
 <!--HERO SECTION-->
-{% include "" %}
+{% include "blog-section.njk" %}
 
 <!--BLOG CONTENT-->
 <article class="">
-  {% include "" %}
+  {% include "blog-article.njk" %}
 
   <!--NFT EXPLANATION-->
-  {% include "" %}
+  {% include "aside-bar.njk" %}
 </article>
 
 <!--SIDEBAR CATEGORIES-->
-<aside class="a">
+<aside class="">
   {% include "" %}
 
   <!--SIDEBAR TAG-->
