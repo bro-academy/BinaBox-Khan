@@ -1,2 +1,13 @@
 <section class="faq">
-      <h3 class="section-title">FAQ</h3>
+      <h3 class="section-title">{{ faqsSection.title }}</h3>
+      {% for faq in faqsItem %}
+      <details class="faq__info">
+        <summary class="faq__question">
+          <h4 class="faq__question-title">{{ faq.question }}</h4>
+        </summary>
+        <p class="faq__answer">
+          {{ faq.answer }}
+        </p>
+        {% endfor %}
+      </details>
+    </section>
