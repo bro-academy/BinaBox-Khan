@@ -1,4 +1,35 @@
-
+{
+  "header": {
+    "logolink": "",
+    "logoimg": "header__logo-image",
+    "logoalt": "Bina box logo",
+    "nav":  [
+      {
+        "text": "home",
+        "link": "index.html"
+      },
+      {
+        "text": "Blog",
+        "link": "blog-articel.html"
+      },
+      {
+        "text": "Catalog",
+        "link": "catalog.html",
+      },
+      {
+        "text": "contact us",
+         "link": "contact-us.html"
+      }
+    ]
+  },
+    "headerButtons": {
+    "textSecondary": "Discord",
+    "imgSecondary": "https://via.placeholder.com/150",
+    "altSecondary": "Discord",
+    "textPrimary": "Connect",
+    "imgPrimary": "https://via.placeholder.com/150",
+    "altPrimary": "Connect"
+  },
 
   "about-us.n-item.njk": {
     "text": "Read more",
@@ -27,6 +58,6 @@
       "title": "Big community",
       "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
     }
-  ],
+  ]
 
-  
+}
