@@ -1,59 +1,36 @@
 <footer class="footer">
-    <div class="footer__section">
-      <div>
-        <a href="#" class="footer__logo-link"><img src="#" alt="Bina Box Logo" class="footer__logo" /></a>
-        <p class="footer__text">
-          We are the best way to check the rarity of nft collection
-        </p>
-      </div>
-      <div>
-        <nav class="footer__nav">
-          <h5 class="footer__nav-title">Subscribe</h5>
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link"> Blog</a></li>
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link"> Catalog</a></li>
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link"> Contact us</a></li>
-          </ul>
-        </nav>
-        <nav class="footer__nav">
-          <h5 class="footer__nav-title">Company</h5>
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link"> Terms and conditions</a></li>
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link"> Privacy Policy</a></li>
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link"> Help Center</a></li>
-          </ul>
-        </nav>
-      </div>
+  <div class="footer__section">
+    <div>
+      <a href="{{ footer.logo.link }}" class="footer__logo-link">
+        <img src="{{ footer.logo.src }}" alt="{{ footer.logo.alt }}" class="footer__logo" />
+      </a>
+      <p class="footer__text">{{ footer.description }}</p>
     </div>
-    <div class="footer__section">
-      <div class="footer__text">BINABOX 2022 - ALL rights reserved</div>
-      <div class="social-links">
-        <ul>
-          <li class="social-item">
-            <a href="#" target="_blank" class="social-link">
-              <img src="#" alt="Twitter icon" class="social-icon" /></a>
-          </li>
-          <li class="social-item">
-            <a href="#" target="_blank" class="social-link">
-              <img src="#" alt="Facebook icon" class="social-icon" /></a>
-          </li>
-          <li class="social-item">
-            <a href="#" target="_blank" class="social-link">
-              <img src="#" alt="Telegram icon" class="social-icon" /></a>
-          </li>
-          <li class="social-item">
-            <a href="#" target="_blank" class="social-link">
-              <img src="#" alt="Youtube icon" class="social-icon" /></a>
-          </li>
-          <li class="social-item">
-            <a href="#" target="_blank" class="social-link">
-              <img src="#" alt="Tiktok icon" class="social-icon" /></a>
-          </li>
-          <li class="social-item">
-            <a href="#" target="_blank" class="social-link">
-              <img src="#" alt="Discord icon" class="social-icon" /></a>
-          </li>
+    <div>
+      {% for nav in footer.navs %}
+      <nav class="footer__nav">
+        <h5 class="footer__nav-title">{{ nav.title }}</h5>
+        <ul class="footer__nav-list">
+          {% for item in nav.links %}
+          <li class="footer__nav-item"><a href="{{ item.url }}" class="footer__nav-link">{{ item.label }}</a></li>
+          {% endfor %}
         </ul>
-      </div>
+      </nav>
+      {% endfor %}
     </div>
-  </footer>
+  </div>
+  <div class="footer__section">
+    <div class="footer__text">{{ footer.copyright }}</div>
+    <div class="social-links">
+      <ul>
+        {% for social in footer.socials %}
+        <li class="social-item">
+          <a href="{{ social.url }}" target="_blank" class="social-link">
+            <img src="{{ social.icon }}" alt="{{ social.alt }}" class="social-icon" />
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>

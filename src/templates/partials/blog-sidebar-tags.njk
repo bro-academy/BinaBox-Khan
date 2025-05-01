@@ -1,12 +1,8 @@
-<p class="blog-article__tag-title"><strong>Tags:</strong></p>
-      <ul class="blog-article__tags-list">
-        <li class="blog-article__tags-list">
-          <a href="#" class="blog-article__tags-link">NFT</a>
-        </li>
-        <li class="blog-article__tags-list">
-          <a href="#" class="blog-article__tags-link">ICO</a>
-        </li>
-        <li class="blog-article__tags-list">
-          <a href="#" class="blog-article__tags-link">Crypto</a>
-        </li>
-      </ul>
+<p class="blog-article__tag-title"><strong>{{ tagBlock.title }}</strong></p>
+<ul class="blog-article__tags-list">
+  {% for tag in tagBlock.tags %}
+    <li class="blog-article__tags-list">
+      <a href="{{ tag.url | default('#') }}" class="blog-article__tags-link">{{ tag.name }}</a>
+    </li>
+  {% endfor %}
+</ul>

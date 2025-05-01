@@ -1,106 +1,27 @@
-    <div class="blog__kit-details">
-          <span class="blog__kit-author">Tony Nguyen</span>
-          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
-        </div>
-        <h4 class="blog__kit-title">Sonic Live</h4>
-        <p class="blog__kit-description">
-          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-          nulla imperdiet...
-        </p>
-        <div class="blog__kit-more">
-          <a class="more-btn" href="#">Read More</a>
-        </div>
-      </article>
-      <article class="blog__kit">
-        <div class="blog__kit-small">
-          <img src="images/blogmonkey.webp" width="736" height="198" loading="lazy" decoding="async" alt="Monkey" class="blog__kit-photo" />
-          <span class="blog__kit-category">NFT</span>
-        </div>
-        <div class="blog__kit-details">
-          <span class="blog__kit-author">Tony Nguyen</span>
-          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
-        </div>
-        <h4 class="blog__kit-title">Sonic Live</h4>
-        <p class="blog__kit-description">
-          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-          nulla imperdiet...
-        </p>
-        <div class="blog__kit-more">
-          <a class="more-btn" href="#">Read More</a>
-        </div>
-      </article>
-      <article class="blog__kit">
-        <div class="blog__kit-small">
-          <img src="images/blogduck.webp" alt="Duck" width="736" height="198" loading="lazy" decoding="async" class="blog__kit-photo" />
-          <span class="blog__kit-category">NFT</span>
-        </div>
-        <div class="blog__kit-details">
-          <span class="blog__kit-author">Tony Nguyen</span>
-          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
-        </div>
-        <h4 class="blog__kit-title">Sonic Live</h4>
-        <p class="blog__kit-description">
-          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-          nulla imperdiet...
-        </p>
-        <div class="blog__kit-more">
-          <a class="more-btn" href="#">Read More</a>
-        </div>
-      </article>
-      <article class="blog__kit">
-        <div class="blog__kit-small">
-          <img src="images/blogskeleton.webp" width="736" height="198" loading="lazy" decoding="async" alt="Skeleton" class="blog__kit-photo" />
-          <span class="blog__kit-category">NFT</span>
-        </div>
-        <div class="blog__kit-details">
-          <span class="blog__kit-author">Tony Nguyen</span>
-          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
-        </div>
-        <h4 class="blog__kit-title">Sonic Live</h4>
-        <p class="blog__kit-description">
-          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-          nulla imperdiet...
-        </p>
-        <div class="blog__kit-more">
-          <a class="more-btn" href="#">Read More</a>
-        </div>
-      </article>
-      <article class="blog__kit">
-        <div class="blog__kit-small">
-          <img src="images/blogcat.webp" width="736" height="198" loading="lazy" decoding="async" alt="Cat" class="blog__kit-photo" />
-          <span class="blog__kit-category">NFT</span>
-        </div>
-        <div class="blog__kit-details">
-          <span class="blog__kit-author">Tony Nguyen</span>
-          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
-        </div>
-        <h4 class="blog__kit-title">Sonic Live</h4>
-        <p class="blog__kit-description">
-          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-          nulla imperdiet...
-        </p>
-        <div class="blog__kit-more">
-          <a class="more-btn" href="#">Read More</a>
-        </div>
-      </article>
-      <article class="blog__kit">
-        <div class="blog__kit-large">
-          <img src="images/blogdisk.webp" alt="Motherboard" width="736" height="664" loading="lazy" decoding="async" class="blog__kit-photo--large" />
-          <span class="blog__kit-category">NFT</span>
-        </div>
-        <div class="blog__kit-details">
-          <span class="blog__kit-author">Tony Nguyen</span>
-          <time datetime="2022-06-20" class="blog__kit-datetime">20 jun 2022</time>
-        </div>
-        <h4 class="blog__kit-title">Sonic Live</h4>
-        <p class="blog__kit-description">
-          One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
-          nulla imperdiet...
-        </p>
-        <div class="blog__kit-more">
-          <a class="more-btn" href="#">Read More</a>
-        </div>
-      </article>
-      <div class="more-btn-area">
-        <a href="#" class="more-btn">Read more </a>
-      </div>
+{% for article in blogKits %}
+<article class="blog__kit">
+  <div class="{{ article.size === 'large' ? 'blog__kit-large' : 'blog__kit-small' }}">
+    <img src="{{ article.image.src }}" alt="{{ article.image.alt }}" width="{{ article.image.width }}" height="{{ article.image.height }}" loading="lazy" decoding="async" class="{{ article.size === 'large' ? 'blog__kit-photo--large' : 'blog__kit-photo' }}" />
+    <span class="blog__kit-category">{{ article.category }}</span>
+  </div>
+
+  <div class="blog__kit-details">
+    <span class="blog__kit-author">{{ article.author }}</span>
+    <time datetime="{{ article.date }}" class="blog__kit-datetime">{{ article.dateReadable }}</time>
+  </div>
+
+  <h4 class="blog__kit-title">{{ article.title }}</h4>
+
+  <p class="blog__kit-description">
+    {{ article.description }}
+  </p>
+
+  <div class="blog__kit-more">
+    <a class="more-btn" href="{{ article.link }}">Read More</a>
+  </div>
+</article>
+{% endfor %}
+
+<div class="more-btn-area">
+  <a href="#" class="more-btn">Read more </a>
+</div>

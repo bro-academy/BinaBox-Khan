@@ -1,9 +1,9 @@
 <div class="catalog__header">
-        <h3 class="catalog__title">Catalog</h3>
-        <hr class="catalog__hr"/>
-        <div class="catalog__buttons">
-          <button class="catalog__button catalog__button--all">See All</button>
-          <button class="catalog__button catalog__button--right">&lt;</button>
-          <button class="catalog__button catalog__button--left">&lt;</button>
-        </div>
-      </div>
+  <h3 class="catalog__title">{{ catalogHeader.title }}</h3>
+  <hr class="catalog__hr" />
+  <div class="catalog__buttons">
+    <button class="catalog__button catalog__button--all">{{ catalogHeader.buttons.all }}</button>
+    <button class="catalog__button catalog__button--right">{{ catalogHeader.buttons.right }}</button>
+    <button class="catalog__button catalog__button--left">{{ catalogHeader.buttons.left }}</button>
+  </div>
+</div>

@@ -1,28 +1,10 @@
-<details class="faq__info">
-        <summary class="faq__question">
-          <h4 class="faq__question-title">What are the NFTs?</h4>
-        </summary>
-        <p class="faq__answer">
-          Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
-          Nulla dapibus urna volutpat venenatis, risus faucibus.
-        </p>
-      </details>
-      <details class="faq__info">
-        <summary class="faq__question">
-          <h4 class="faq__question-title">How do i get NFTs?</h4>
-        </summary>
-        <p class="faq__anaswer">NA</p>
-      </details>
-      <details class="faq__info">
-        <summary class="faq__question">
-          <h4 class="faq__question-title">How can we buy your NFTs?</h4>
-        </summary>
-        <p class="faq__answer">NA</p>
-      </details>
-      <details class="faq__info">
-        <summary class="faq__question">
-          <h4 class="faq__question-title">Who are the team behind the project?</h4>
-        </summary>
-        <p class="faq__answer">NA</p>
-      </details>
-    </section>
+<section class="faq">
+  {% for item in faqItems %}
+  <details class="faq__info">
+    <summary class="faq__question">
+      <h4 class="faq__question-title">{{ item.question }}</h4>
+    </summary>
+    <p class="faq__answer">{{ item.answer }}</p>
+  </details>
+  {% endfor %}
+</section>
