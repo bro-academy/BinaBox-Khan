@@ -3,7 +3,7 @@
     "logolink": "",
     "logoimg": "header__logo-image",
     "logoalt": "Bina box logo",
-    "nav":  [
+    "nav": [
       {
         "text": "home",
         "link": "index.html"
@@ -14,26 +14,26 @@
       },
       {
         "text": "Catalog",
-        "link": "catalog.html",
+        "link": "catalog.html"
       },
       {
         "text": "contact us",
-         "link": "contact-us.html"
+        "link": "contact-us.html"
       }
     ]
   },
-    "headerButtons": {
+  "headerButtons": {
     "textSecondary": "Discord",
     "imgSecondary": "https://via.placeholder.com/150",
     "altSecondary": "Discord",
     "textPrimary": "Connect",
     "imgPrimary": "https://via.placeholder.com/150",
     "altPrimary": "Connect"
-  },
-
+  }
+}
 
   
-  "about-us.n-item.njk": {
+  "about-us-item.njk": {
     "text": "Read more",
     "link": "https://via.placeholder.com/150"
   },
@@ -365,5 +365,83 @@
       { "icon": "#", "alt": "Discord icon", "url": "#" }
     ],
     "copyright": "BINABOX 2022 - ALL rights reserved"
+  }
+}
+{
+  "platform": "BINABOX",
+  "tagline": "we are the best way to check rarity of nft colelction",
+  "stats": {
+    "totalItems": "2240+",
+    "whitelistProfiles": "1000"
+  },
+  "buttons": {
+    "connectWallet": "connect wallet",
+    "whitelistNow": "whitelist now"
+  },
+  "image": {
+    "src": "images/binacube.webp",
+    "width": 533,
+    "height": 641,
+    "loading": "eager",
+    "decoding": "async",
+    "alt": "Cube"
+  }
+}
+{
+  "blog": {
+    "title": "Our Blog",
+    "category": "NFT",
+    "featuredImage": {
+      "src": "images/bloggirl.webp",
+      "alt": "Girl Face",
+      "width": 736,
+      "height": 664,
+      "loading": "lazy",
+      "decoding": "async"
+    }
+  }
+}
+{
+  "header": {
+    "title": "Our Blog",
+    "nav": [
+      { "label": "Home", "url": "#" },
+      { "label": "Blog", "url": "#" },
+      { "label": "The Basiliskis NFT", "current": true }
+    ]
+  }
+}
+{
+  "share": {
+    "title": "Share:",
+    "platforms": [
+      {
+        "url": "https://x.com/?lang=en&mx=2",
+        "icon": "#",
+        "alt": "twitter-logo"
+      },
+      {
+        "url": "https://www.facebook.com/",
+        "icon": "#",
+        "alt": "facebook-logo"
+      },
+      {
+        "url": "https://www.instagram.com/",
+        "icon": "#",
+        "alt": "instagram-logo"
+      }
+    ]
+  }
+}
+{
+  "article": {
+    "subtitle": "NFT Avatar Generators",
+    "content": "You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale.",
+    "tagsTitle": "Tags:",
+    "tags": [
+      { "label": "NFT", "url": "#" },
+      { "label": "ICO", "url": "#" },
+      { "label": "Crypto", "url": "#" }
+    ]
   }
 }

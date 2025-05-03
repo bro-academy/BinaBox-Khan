@@ -1,7 +1,17 @@
-section class="blog">
-      <h3 class="section-title">Our Blog</h3>
-      <article class="blog__kit">
-        <div class="blog__kit-large">
-          <img src="images/bloggirl.webp" alt="Girl Face" width="736" height="664" loading="lazy" decoding="async" class="blog__kit-photo" />
-          <span class="blog__kit-category">NFT</span>
-        </div>
+<section class="blog">
+  <h3 class="section-title">{{ blog.title }}</h3>
+  <article class="blog__kit">
+    <div class="blog__kit-large">
+      <img 
+        src="{{ blog.featuredImage.src }}" 
+        alt="{{ blog.featuredImage.alt }}" 
+        width="{{ blog.featuredImage.width }}" 
+        height="{{ blog.featuredImage.height }}" 
+        loading="{{ blog.featuredImage.loading }}" 
+        decoding="{{ blog.featuredImage.decoding }}" 
+        class="blog__kit-photo" 
+      />
+      <span class="blog__kit-category">{{ blog.category }}</span>
+    </div>
+  </article>
+</section>

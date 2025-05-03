@@ -1,17 +1,13 @@
-<h3 class="blog-article__subtitle">NFT Avatar Generators</h3>
-      <p class="blog-article__content">
-        You can find a range of NFT marketplaces where you can buy existing NFTs
-        or list your own NFTs for sale.
-      </p>
-      <p class="blog-article__tag-title"><strong>Tags:</strong></p>
-      <ul class="blog-article__tags-list">
-        <li class="blog-article__tags-list">
-          <a href="#" class="blog-article__tags-link">NFT</a>
-        </li>
-        <li class="blog-article__tags-list">
-          <a href="#" class="blog-article__tags-link">ICO</a>
-        </li>
-        <li class="blog-article__tags-list">
-          <a href="#" class="blog-article__tags-link">Crypto</a>
-        </li>
-      </ul>
+<h3 class="blog-article__subtitle">{{ article.subtitle }}</h3>
+<p class="blog-article__content">
+  {{ article.content }}
+</p>
+
+<p class="blog-article__tag-title"><strong>{{ article.tagsTitle }}</strong></p>
+<ul class="blog-article__tags-list">
+  {% for tag in article.tags %}
+    <li class="blog-article__tag-item">
+      <a href="{{ tag.url }}" class="blog-article__tags-link">{{ tag.label }}</a>
+    </li>
+  {% endfor %}
+</ul>

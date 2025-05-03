@@ -1,18 +1,10 @@
-<p class="blog-article__share-title"><strong>Share:</strong></p>
-      <ul class="blog-article__share-list">
-        <li class="blog-article__share-list">
-          <a href="https://x.com/?lang=en&mx=2" target="_blank" class="blog-article__share-link">
-            <img src="#" alt="twitter-logo" class="blog-article__share-icon" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/" target="_blank" class="blog-article__share-link">
-            <img src="#" alt="facebook-logo" class="blog-article__share-icon" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/" target="_blank" class="blog-article__share-link">
-            <img src="#" alt="instagram-logo" class="blog-article__share-icon" />
-          </a>
-        </li>
-      </ul>
+<p class="blog-article__share-title"><strong>{{ share.title }}</strong></p>
+<ul class="blog-article__share-list">
+  {% for platform in share.platforms %}
+    <li class="blog-article__share-item">
+      <a href="{{ platform.url }}" target="_blank" class="blog-article__share-link">
+        <img src="{{ platform.icon }}" alt="{{ platform.alt }}" class="blog-article__share-icon" />
+      </a>
+    </li>
+  {% endfor %}
+</ul>
