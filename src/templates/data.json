@@ -1,7 +1,7 @@
 {
   "header": {
     "logo": {
-      "link": "#header.logolink",
+      "link": "header.logo.link",
       "src": "header.logoimg",
       "alt": "box logo"
     },
@@ -51,7 +51,7 @@
       "whitelist": "whitelist now"
     },
     "image": {
-      "src": "images/binacube.webp",
+      "src": "binacube.webp",
       "alt": "Cube",
       "width": 533,
       "height": 641
@@ -67,7 +67,7 @@
     "items": [
       {
         "image": {
-          "src": "images/binacube.webp",
+          "src": "binacube.webp",
           "alt": "Skeleton",
           "width": 252,
           "height": 324
@@ -78,7 +78,7 @@
       },
       {
         "image": {
-          "src": "images/binacube.webp",
+          "src": "binacube.webp",
           "alt": "Mewooo",
           "width": 252,
           "height": 324
@@ -89,7 +89,7 @@
       },
       {
         "image": {
-          "src": "images/scisoors.webp",
+          "src": "scisoors.webp",
           "alt": "Scissors",
           "width": 252,
           "height": 324
@@ -100,7 +100,7 @@
       },
       {
         "image": {
-          "src": "images/disc.webp",
+          "src": "disc.webp",
           "alt": "Drive Box",
           "width": 252,
           "height": 324
@@ -111,7 +111,7 @@
       },
       {
         "image": {
-          "src": "images/drivebox.webp",
+          "src": "drivebox.webp",
           "alt": "Mother Board",
           "width": 252,
           "height": 324
@@ -127,7 +127,7 @@
     "items": [
       {
         "image": {
-          "src": "images/bloggirl.webp",
+          "src": "bloggirl.webp",
           "alt": "Face in smoke",
           "width": 736,
           "height": 664
@@ -142,7 +142,7 @@
       },
       {
         "image": {
-        "src": "images/blogskeleton.webp",
+        "src": "blogskeleton.webp",
         "alt": "Robot in blue",
         "width": 736,
         "height": 198
@@ -157,7 +157,7 @@
       },
       {
         "image": {
-        "src": "images/blogcat.webp",
+        "src": "blogcat.webp",
         "alt": "Cyber cat",
         "width": 736,
         "height": 198
@@ -172,7 +172,7 @@
       },
       {
         "image": {
-        "src": "images/blogmonkey.webp",
+        "src": "blogmonkey.webp",
         "alt": "Cyber monkey",
         "width": 736,
         "height": 198
@@ -187,7 +187,7 @@
       },
       {
         "image": {
-        "src": "images/blogduck.webp",
+        "src": "blogduck.webp",
         "alt": "Dog bust sculpture",
         "width": 736,
         "height": 198
@@ -202,7 +202,7 @@
       },
       {
         "image": {
-        "src": "images/blogdisk.webp",
+        "src": "blogdisk.webp",
         "alt": "Holographic box",
         "width": 736,
         "height": 664
@@ -250,7 +250,7 @@
         "name": "Jason smith",
         "role": "co-fouder",
         "image": {
-          "src": "images/tema.webp",
+          "src": "tema.webp",
           "alt": "Pic"
         },
         "socials": [
@@ -290,7 +290,7 @@
         "name": "Jason smith",
         "role": "co-fouder",
         "image": {
-          "src": "images/tema.webp",
+          "src": "tema.webp",
           "alt": "Pic"
         },
         "socials": [
@@ -330,7 +330,7 @@
         "name": "Jason smith",
         "role": "co-fouder",
         "image": {
-          "src": "images/tema.webp",
+          "src": "tema.webp",
           "alt": "Pic"
         },
         "socials": [
@@ -370,7 +370,7 @@
         "name": "Jason smith",
         "role": "co-fouder",
         "image": {
-          "src": "images/tema.webp",
+          "src": "tema.webp",
           "alt": "Pic"
         },
         "socials": [
@@ -410,7 +410,7 @@
         "name": "Jason smith",
         "role": "co-fouder",
         "image": {
-          "src": "images/tema.webp",
+          "src": "tema.webp",
           "alt": "Pic"
         },
         "socials": [
@@ -450,7 +450,7 @@
         "name": "Jason smith",
         "role": "co-fouder",
         "image": {
-          "src": "images/tema.webp",
+          "src": "tema.webp",
           "alt": "Pic"
         },
         "socials": [
@@ -490,7 +490,7 @@
         "name": "Jason smith",
         "role": "co-fouder",
         "image": {
-          "src": "images/tema.webp",
+          "src": "tema.webp",
           "alt": "Pic"
         },
         "socials": [
@@ -556,7 +556,7 @@
     "date": "2022-06-20",
     "dateReadable": "20 jun 2022",
     "mainImage": {
-      "src": "images/manofdragon.webp",
+      "src": "manofdragon.webp",
       "alt": "Man Of Dragon",
       "caption": "Photo Caption"
     },
@@ -585,12 +585,12 @@
       },
       "gallery": [
         {
-          "src": "images/dragonsec.webp",
+          "src": "dragonsec.webp",
           "alt": "dragon",
           "caption": "Photo caption"
         },
         {
-          "src": "images/dragonthir.webp",
+          "src": "dragonthir.webp",
           "alt": "dragon-man",
           "caption": "Photo caption"
         }
