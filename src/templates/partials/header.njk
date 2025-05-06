@@ -1,16 +1,17 @@
 <header class="header">
   <div class="header__logo">
-      <a href="{{ header.logolink }}" class="header__logo-link">
-      <img src="header.logoimg" alt="header.logoalt"  class="header__logo-image" /></a>
+    <a href="{{ header.logolink }}" class="header__logo-link">
+      <img src="{{ header.logoimg }}" alt="{{ header.logoalt }}" class="header__logo-image" />
+    </a>
   </div>
   <nav class="header__nav">
-  {% for item in header.nav %}
-      <a href="/" class="header__nav-link header__nav-link--active">Home</a>
-      <a href="#" class="header__nav-link">Blog</a>
-      <a href="#" class="header__nav-link">Catalog</a>
-      <a href="#" class="header__nav-link">Contact us</a>
+    {% for item in header.nav %}
+      <a href="{{ item.href }}" class="header__nav-link{% if item.active %} header__nav-link--active{% endif %}">
+        {{ item.label }}
+      </a>
+    {% endfor %}
   </nav>
   <div class="header__right">
-      {% include "partials/header-button.njk %}
+    {% include "partials/header-button.njk" %}
   </div>
-  </header>
+</header>

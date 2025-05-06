@@ -1,8 +1,8 @@
 {
   "header": {
     "logo": {
-      "link": "header.logo.link",
-      "src": "header.logoimg",
+      "link": "/",
+      "src": "binabox-logo-blue.svg",
       "alt": "box logo"
     },
     "nav": [
@@ -16,7 +16,7 @@
       },
       {
         "text": "Catalog",
-        "href": "cataglog.html"
+        "href": "catalog.html"
       },
       {
         "text": "Contact us",
