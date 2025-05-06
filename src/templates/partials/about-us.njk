@@ -1,16 +1,13 @@
 <section class="about-us">
-    <h3 class="section-title">{{ aboutSection.sectionTitle }}</h3>
-      {{ aboutSection.sectionDescription }}
-    </p>
-    <ul class="about-us__list">
-      {% for item in aboutCard %}
+  <h3 class="section-title">{{ aboutSection.sectionTitle }}</h3>
+  <p>{{ aboutSection.sectionDescription }}</p>
+  
+  <ul class="about-us__list">
+    {% for item in aboutCard %}
       <li class="about-us__list-item">
         <h4 class="about-us__list-item-title">{{ item.title }}</h4>
-        <p class="about-us__item-description">
-          {{ item.description }}</p>
-          </li>
-          {% endfor %}
-          </ul>
-    </div>
-    {% include "partials/about-us.njk" %}
-  </section>
+        <p class="about-us__item-description">{{ item.description }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
