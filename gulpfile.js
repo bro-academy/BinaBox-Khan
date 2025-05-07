@@ -35,7 +35,7 @@ const paths = {
     styles: dev+'styles/pages/*.{css,scss}',
     svg: dev+'images/sprite/*.svg',
     views: dev+'templates/**/*.{json,njk,html}',
-    pages: pages: dev+'templates/pages/*.{njk,html}',
+    pages: dev+'templates/pages/*.{njk,html}',
     modernImages: dev+'images/static/**/*.{webp,avif}',
     svgStatic: dev+'images/static/**/*.svg',
     images: dev+'images/static/**/*.{jpg,jpeg,png}',
