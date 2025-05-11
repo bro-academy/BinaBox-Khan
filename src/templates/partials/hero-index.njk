@@ -17,13 +17,13 @@
       <button class="button button--secondary">{{ buttons.whitelistNow }}</button>
     </div>
   </div>
-  <img 
-    src="{{ image.src }}" 
-    width="{{ image.width }}" 
-    height="{{ image.height }}" 
-    loading="{{ image.loading }}" 
-    decoding="{{ image.decoding }}" 
-    alt="{{ image.alt }}" 
-    class="hero__image" 
+  <img
+    src="{{ hero.image.src }}"
+    width="{{ hero.image.width }}"
+    height="{{ hero.image.height }}"
+    loading="eager"
+    decoding="async"
+    alt="{{ hero.image.alt }}"
+    class="hero__image"
   />
 </section>

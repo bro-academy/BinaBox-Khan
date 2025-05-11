@@ -1,17 +1,31 @@
 <section class="blog">
   <h3 class="section-title">{{ blog.title }}</h3>
-  <article class="blog__kit">
-    <div class="blog__kit-large">
-      <img 
-        src="{{ blog.featuredImage.src }}" 
-        alt="{{ blog.featuredImage.alt }}" 
-        width="{{ blog.featuredImage.width }}" 
-        height="{{ blog.featuredImage.height }}" 
-        loading="{{ blog.featuredImage.loading }}" 
-        decoding="{{ blog.featuredImage.decoding }}" 
-        class="blog__kit-photo" 
-      />
-      <span class="blog__kit-category">{{ blog.category }}</span>
-    </div>
-  </article>
+  <div class="blog__grid">
+    {% for item in blog.items %}
+    <article class="blog__kit">
+      <div class="blog__kit-large">
+        <img 
+          src="/images/{{ item.image.src }}.jpg" 
+          alt="{{ item.image.alt }}" 
+          width="{{ item.image.width }}" 
+          height="{{ item.image.height }}" 
+          loading="lazy" 
+          decoding="async" 
+          class="blog__kit-photo" 
+        />
+        <span class="blog__kit-category">{{ item.category }}</span>
+      </div>
+      <div class="blog__kit-info">
+        <h4 class="blog__kit-title">
+          <a href="{{ item.link }}">{{ item.title }}</a>
+        </h4>
+        <p class="blog__kit-description">{{ item.description }}</p>
+        <div class="blog__kit-meta">
+          <span class="blog__kit-author">{{ item.author }}</span> &bull;
+          <span class="blog__kit-date">{{ item.dateReadable }}</span>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
 </section>

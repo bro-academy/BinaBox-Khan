@@ -4,7 +4,8 @@
       <img src="{{ header.logo.src }}" alt="{{ header.logo.alt }}" class="header__logo-image" />
     </a>
   </div>
-  {% for item in header.nav %}
+  <nav class="header__nav">
+    {% for item in header.nav %}
       <a href="{{ item.href }}" class="header__nav-link{% if item.text == currentPage %} header__nav-link--active{% endif %}">
         {{ item.text }}
       </a>
