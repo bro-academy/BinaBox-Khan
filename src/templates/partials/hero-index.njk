@@ -17,6 +17,7 @@
       <button class="button button--secondary">{{ buttons.whitelistNow }}</button>
     </div>
   </div>
+
   <img
     src="{{ hero.image.src }}"
     width="{{ hero.image.width }}"
@@ -26,4 +27,23 @@
     alt="{{ hero.image.alt }}"
     class="hero__image"
   />
+
+  <picture
+    class="hero__image{% if binacube.isSmall %} hero__image--small{% endif %}{% if image.binacube %} hero__image--custom{% endif %}"
+  >
+    <source
+      srcset="/img/{{ image.binacube }}-1x.avif 1x, /img/{{ image.binacube }}-2x.avif 2x"
+      type="image/avif"
+    />
+    <source
+      srcset="/img/{{ image.binacube }}-1x.webp 1x, /img/{{ image.binacube }}-2x.webp 2x"
+      type="image/webp"
+    />
+    <img
+      src="/img/{{ image.binacube }}.png"
+      alt="Cube"
+      width="533"
+      height="641"
+    />
+  </picture>
 </section>
