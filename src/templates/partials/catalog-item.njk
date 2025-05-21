@@ -1,19 +1,31 @@
 <ul class="catalog__list">
-  {% for item in catalog %}
+  {% for item in catalog.items %}
   <li class="catalog__list-item">
     <div>
-      <img
-        src="{{ item.image.src }}"
-        alt="{{ item.image.alt }}"
-        width="{{ item.image.width }}"
-        height="{{ item.image.height }}"
-        loading="lazy"
-        decoding="async"
-        class="catalog__item-photo"
-      />
+      <picture class="catalog__item-picture">
+        <source
+          srcset="/img/{{ item.image.src }}-1x.avif 1x, /img/{{ item.image.src }}-2x.avif 2x"
+          type="image/avif"
+        />
+        <source
+          srcset="/img/{{ item.image.src }}-1x.webp 1x, /img/{{ item.image.src }}-2x.webp 2x"
+          type="image/webp"
+        />
+        <img
+          src="/img/{{ image.binacube }}-2x.webp"
+          alt="{{ item.image.alt }}"
+          width="{{ item.image.width }}"
+          height="{{ item.image.height }}"
+          loading="lazy"
+          decoding="async"
+          class="catalog__item-photo"
+        />
+      </picture>
       <p class="catalog__item-status{{ item.status == 'Sold Out' ? ' catalog__item-status--sold' : '' }}">
         {{ item.status }}
       </p>
     </div>
     <p class="catalog__item-price">{{ item.price }}</p>
-    <
+  </li>
+  {% endfor %}
+</ul>
