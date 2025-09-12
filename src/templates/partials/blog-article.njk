@@ -1,0 +1,9 @@
+<p class="blog-article__content">
+  {{ content.paragraph | safe }}
+</p>
+
+<ul class="list">
+  {% for item in content.list %}
+    <li class="list-item">{{ item | safe }}</li>
+  {% endfor %}
+</ul>

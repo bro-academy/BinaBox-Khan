@@ -1,0 +1,699 @@
+{
+  "header": {
+    "logo": {
+      "link": "/",
+      "src": "binabox-logo-blue",
+      "alt": "box logo"
+    },
+    "nav": [
+      {
+        "text": "Home",
+        "href": "index.html"
+      },
+      {
+        "text": "Blog",
+        "href": "blog-page.html"
+      },
+      {
+        "text": "Catalog",
+        "href": "catalog.html"
+      },
+      {
+        "text": "Contact us",
+        "href": "contact-us.html"
+      }
+    ],
+    "searchFieldText": "Search",
+    "buttons": {
+      "secondary": {
+        "text": "Discord",
+        "img": "discord",
+        "alt": "Discord"
+      },
+      "primary": {
+        "text": "Connect",
+        "img": "connect",
+        "alt": "Connect"
+      }
+    }
+  },
+  "hero": {
+    "title": "WITH BINABOX EXPLORE NFT COLLECTION",
+    "subtitle": "We are the best way to check rarity of nft colelction",
+    "stats": {
+      "totalItems": "2240+",
+      "totalItemsText": "Total It eam",
+      "profilesWhitelist": "1000",
+      "profilesWhitelistText": "Profiles whitelisted"
+    },
+    "buttons": {
+      "connect": "connect wallet",
+      "whitelist": "whitelist now"
+    },
+    "image": {
+      "src": "binacube",
+      "alt": "Cube",
+      "width": 533,
+      "height": 641
+    }
+  },
+  "catalog": {
+    "header": {
+      "title": "Catalog",
+      "buttons": {
+        "all": "See All"
+      }
+    },
+    "items": [
+      {
+        "image": {
+          "src": "binacube",
+          "alt": "Skeleton",
+          "width": 252,
+          "height": 324
+        },
+        "status": "New",
+        "price": "199$",
+        "name": "Name"
+      },
+      {
+        "image": {
+          "src": "binacube",
+          "alt": "Mewooo",
+          "width": 252,
+          "height": 324
+        },
+        "status": "New",
+        "price": "199$",
+        "name": "Name"
+      },
+      {
+        "image": {
+          "src": "scisoors",
+          "alt": "Scissors",
+          "width": 252,
+          "height": 324
+        },
+        "status": "Sold Out",
+        "price": "199$",
+        "name": "Name"
+      },
+      {
+        "image": {
+          "src": "disc",
+          "alt": "Drive Box",
+          "width": 252,
+          "height": 324
+        },
+        "status": "New",
+        "price": "199$",
+        "name": "Name"
+      },
+      {
+        "image": {
+          "src": "drivebox",
+          "alt": "Mother Board",
+          "width": 252,
+          "height": 324
+        },
+        "status": "New",
+        "price": "199$",
+        "name": "Name"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Our Blog",
+    "items": [
+      {
+        "image": {
+          "src": "bloggirl",
+          "alt": "Face in smoke",
+          "width": 736,
+          "height": 664
+        },
+        "category": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateReadable": "20 jun 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "link": "blog.category"
+      },
+      {
+        "image": {
+        "src": "blogskeleton",
+        "alt": "Robot in blue",
+        "width": 736,
+        "height": 198
+        },
+        "category": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateReadable": "20 jun 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "link": "#"
+      },
+      {
+        "image": {
+        "src": "blogcat",
+        "alt": "Cyber cat",
+        "width": 736,
+        "height": 198
+        },
+        "category": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateReadable": "20 jun 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "link": "#"
+      },
+      {
+        "image": {
+        "src": "blogmonkey",
+        "alt": "Cyber monkey",
+        "width": 736,
+        "height": 198
+        },
+        "category": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateReadable": "20 jun 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "link": "#"
+      },
+      {
+        "image": {
+        "src": "blogduck",
+        "alt": "Dog bust sculpture",
+        "width": 736,
+        "height": 198
+        },
+        "category": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateReadable": "20 jun 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "link": "#"
+      },
+      {
+        "image": {
+        "src": "blogdisk",
+        "alt": "Holographic box",
+        "width": 736,
+        "height": 664
+        },
+        "category": "NFT",
+        "author": "Tony Nguyen",
+        "date": "2022-06-20",
+        "dateReadable": "20 jun 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "link": "#"
+      }
+    ]
+  },
+  "aboutUs": {
+    "title": "About us",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...",
+    "features": [
+      {
+        "title": "High Quality",
+        "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      },
+      {
+        "title": "Big Collection",
+        "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      },
+      {
+        "title": "Top resources",
+        "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      },
+      {
+        "title": "Big Community",
+        "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      }
+    ],
+    "button": {
+      "text": "Read more",
+      "href": "#"
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "members": [
+      {
+        "name": "Jason smith",
+        "role": "co-fouder",
+        "image": {
+          "src": "tema",
+          "alt": "Pic"
+        },
+        "socials": [
+          {
+            "platform": "Twitter",
+            "url": "#",
+            "icon": "#",
+            "alt": "Twitter icon"
+          },
+          {
+            "platform": "Facebook",
+            "url": "#",
+            "icon": "#",
+            "alt": "Facebook icon"
+          },
+          {
+            "platform": "Telegram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Telegram icon"
+          },
+          {
+            "platform": "Linkedin",
+            "url": "#",
+            "icon": "#",
+            "alt": "Linkedin icon"
+          },
+          {
+            "platform": "Instagram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Instagram icon"
+          }
+        ]
+      },
+      {
+        "name": "Jason smith",
+        "role": "co-fouder",
+        "image": {
+          "src": "tema",
+          "alt": "Pic"
+        },
+        "socials": [
+          {
+            "platform": "Twitter",
+            "url": "#",
+            "icon": "#",
+            "alt": "Twitter icon"
+          },
+          {
+            "platform": "Facebook",
+            "url": "#",
+            "icon": "#",
+            "alt": "Facebook icon"
+          },
+          {
+            "platform": "Telegram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Telegram icon"
+          },
+          {
+            "platform": "Linkedin",
+            "url": "#",
+            "icon": "#",
+            "alt": "Linkedin icon"
+          },
+          {
+            "platform": "Instagram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Instagram icon"
+          }
+        ]
+      },
+      {
+        "name": "Jason smith",
+        "role": "co-fouder",
+        "image": {
+          "src": "tema",
+          "alt": "Pic"
+        },
+        "socials": [
+          {
+            "platform": "Twitter",
+            "url": "#",
+            "icon": "#",
+            "alt": "Twitter icon"
+          },
+          {
+            "platform": "Facebook",
+            "url": "#",
+            "icon": "#",
+            "alt": "Facebook icon"
+          },
+          {
+            "platform": "Telegram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Telegram icon"
+          },
+          {
+            "platform": "Linkedin",
+            "url": "#",
+            "icon": "#",
+            "alt": "Linkedin icon"
+          },
+          {
+            "platform": "Instagram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Instagram icon"
+          }
+        ]
+      },
+      {
+        "name": "Jason smith",
+        "role": "co-fouder",
+        "image": {
+          "src": "tema",
+          "alt": "Pic"
+        },
+        "socials": [
+          {
+            "platform": "Twitter",
+            "url": "#",
+            "icon": "#",
+            "alt": "Twitter icon"
+          },
+          {
+            "platform": "Facebook",
+            "url": "#",
+            "icon": "#",
+            "alt": "Facebook icon"
+          },
+          {
+            "platform": "Telegram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Telegram icon"
+          },
+          {
+            "platform": "Linkedin",
+            "url": "#",
+            "icon": "#",
+            "alt": "Linkedin icon"
+          },
+          {
+            "platform": "Instagram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Instagram icon"
+          }
+        ]
+      },
+      {
+        "name": "Jason smith",
+        "role": "co-fouder",
+        "image": {
+          "src": "tema",
+          "alt": "Pic"
+        },
+        "socials": [
+          {
+            "platform": "Twitter",
+            "url": "#",
+            "icon": "#",
+            "alt": "Twitter icon"
+          },
+          {
+            "platform": "Facebook",
+            "url": "#",
+            "icon": "#",
+            "alt": "Facebook icon"
+          },
+          {
+            "platform": "Telegram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Telegram icon"
+          },
+          {
+            "platform": "Linkedin",
+            "url": "#",
+            "icon": "#",
+            "alt": "Linkedin icon"
+          },
+          {
+            "platform": "Instagram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Instagram icon"
+          }
+        ]
+      },
+      {
+        "name": "Jason smith",
+        "role": "co-fouder",
+        "image": {
+          "src": "tema",
+          "alt": "Pic"
+        },
+        "socials": [
+          {
+            "platform": "Twitter",
+            "url": "#",
+            "icon": "#",
+            "alt": "Twitter icon"
+          },
+          {
+            "platform": "Facebook",
+            "url": "#",
+            "icon": "#",
+            "alt": "Facebook icon"
+          },
+          {
+            "platform": "Telegram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Telegram icon"
+          },
+          {
+            "platform": "Linkedin",
+            "url": "#",
+            "icon": "#",
+            "alt": "Linkedin icon"
+          },
+          {
+            "platform": "Instagram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Instagram icon"
+          }
+        ]
+      },
+      {
+        "name": "Jason smith",
+        "role": "co-fouder",
+        "image": {
+          "src": "tema",
+          "alt": "Pic"
+        },
+        "socials": [
+          {
+            "platform": "Twitter",
+            "url": "#",
+            "icon": "#",
+            "alt": "Twitter icon"
+          },
+          {
+            "platform": "Facebook",
+            "url": "#",
+            "icon": "#",
+            "alt": "Facebook icon"
+          },
+          {
+            "platform": "Telegram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Telegram icon"
+          },
+          {
+            "platform": "Linkedin",
+            "url": "#",
+            "icon": "#",
+            "alt": "Linkedin icon"
+          },
+          {
+            "platform": "Instagram",
+            "url": "#",
+            "icon": "#",
+            "alt": "Instagram icon"
+          }
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "What are the NFTs?",
+        "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+      },
+      {
+        "question": "How do i get NFTs?",
+        "answer": "NA"
+      },
+      {
+        "question": "How can we buy your NFTs?",
+        "answer": "NA"
+      },
+      {
+        "question": "Who are the team behind the project?",
+        "answer": "NA"
+      }
+    ]
+  },
+  "blogArticle": {
+    "title": "The Basilikis NFT",
+    "category": "Gaming",
+    "author": "Tony Nguyen",
+    "date": "2022-06-20",
+    "dateReadable": "20 jun 2022",
+    "mainImage": {
+      "src": "manofdragon",
+      "alt": "Man Of Dragon",
+      "caption": "Photo Caption"
+    },
+    "content": {
+      "part1": {
+        "paragraphs": [
+          "The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).",
+          "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO."
+        ],
+        "list": [
+          "The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).",
+          "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO."
+        ]
+      },
+      "listNames": [
+        "List Name",
+        "List Name",
+        "List Name",
+        "List Name"
+      ],
+      "quote": {
+        "text": "The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers",
+        "icon": "#",
+        "score": "8.5/10",
+        "source": "Markout Corporation"
+      },
+      "gallery": [
+        {
+          "src": "dragonsec",
+          "alt": "dragon",
+          "caption": "Photo caption"
+        },
+        {
+          "src": "dragonthir",
+          "alt": "dragon-man",
+          "caption": "Photo caption"
+        }
+      ]
+    },
+    "tags": [
+      "NFT",
+      "ICO",
+      "Crypto"
+    ],
+    "shareLinks": [
+      {
+        "url": "https://x.com/?lang=en&mx=2",
+        "icon": "#",
+        "alt": "twitter-logo"
+      },
+      {
+        "url": "https://www.facebook.com/",
+        "icon": "#",
+        "alt": "facebook-logo"
+      },
+      {
+        "url": "https://www.instagram.com/",
+        "icon": "#",
+        "alt": "instagram-logo"
+      }
+    ]
+  },
+  "footer": {
+    "logo": {
+      "src": "binabox-logo-blue",
+      "alt": "Bina Box Logo",
+      "link": "/"
+    },
+    "description": "We are the best way to check the rarity of nft collection",
+    "navs": [
+      {
+        "title": "Subscribe",
+        "links": [
+          {
+            "label": "Blog",
+            "url": "#"
+          },
+          {
+            "label": "Catalog",
+            "url": "#"
+          },
+          {
+            "label": "Contact us",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          {
+            "label": "Terms and conditions",
+            "url": "#"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "#"
+          },
+          {
+            "label": "Help Center",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "icon": "#",
+        "alt": "Twitter icon",
+        "url": "#"
+      },
+      {
+        "icon": "#",
+        "alt": "Facebook icon",
+        "url": "#"
+      },
+      {
+        "icon": "#",
+        "alt": "Telegram icon",
+        "url": "#"
+      },
+      {
+        "icon": "#",
+        "alt": "Youtube icon",
+        "url": "#"
+      },
+      {
+        "icon": "#",
+        "alt": "Tiktok icon",
+        "url": "#"
+      },
+      {
+        "icon": "#",
+        "alt": "Discord icon",
+        "url": "#"
+      }
+    ],
+    "copyright": "BINABOX 2022 - ALL rights reserved"
+  }
+}

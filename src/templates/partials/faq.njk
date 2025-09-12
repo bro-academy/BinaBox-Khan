@@ -1,0 +1,9 @@
+<section class="faq">
+  <h3 class="section-title">{{ faqsSection.title }}</h3>
+  {% for faq in faqsItem %}
+    <details class="faq__info">
+      <summary class="faq__question">{{ faq.question }}</summary>
+      <p class="faq__answer">{{ faq.answer }}</p>
+    </details>
+  {% endfor %}
+</section>

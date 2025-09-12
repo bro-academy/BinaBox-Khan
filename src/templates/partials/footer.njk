@@ -1,1 +1,36 @@
-footer
+<footer class="footer">
+  <div class="footer__section">
+    <div>
+      <a href="{{ footer.logo.link }}" class="footer__logo-link">
+        <img src="{{ footer.logo.src }}" alt="{{ footer.logo.alt }}" class="footer__logo" />
+      </a>
+      <p class="footer__text">{{ footer.description }}</p>
+    </div>
+    <div>
+      {% for nav in footer.navs %}
+      <nav class="footer__nav">
+        <h5 class="footer__nav-title">{{ nav.title }}</h5>
+        <ul class="footer__nav-list">
+          {% for item in nav.links %}
+          <li class="footer__nav-item"><a href="{{ item.url }}" class="footer__nav-link">{{ item.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="footer__section">
+    <div class="footer__text">{{ footer.copyright }}</div>
+    <div class="social-links">
+      <ul>
+        {% for social in footer.socials %}
+        <li class="social-item">
+          <a href="{{ social.url }}" target="_blank" class="social-link">
+            <img src="{{ social.icon }}" alt="{{ social.alt }}" class="social-icon" />
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>

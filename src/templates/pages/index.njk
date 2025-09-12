@@ -1,0 +1,23 @@
+{% set currentPage = "Home" %}
+{% extends "layouts/base.njk" %}
+{% set title =
+"we are the best way to check rarity of nft colelction" %}
+{% set page = "home" %}
+{% block content %}
+
+<!--MAIN STARTS HERE-->
+
+<!--HERO SECTION-->
+{% include "partials/hero-index.njk" %}
+
+<!--CATALOG SECTION-->
+{% include "partials/catalog.njk" %}
+
+<!--BLOG SECTION-->
+{% include "partials/our-blog.njk" %}
+
+<!--ABOUT US SECTION-->
+{% include "partials/about-us.njk" %}
+
+<!--FAQs SECTION-->
+{% include "partials/faq.njk" %} {% endblock %}

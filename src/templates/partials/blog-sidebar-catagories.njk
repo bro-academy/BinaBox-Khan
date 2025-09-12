@@ -1,0 +1,12 @@
+<section class="blog-article-sidebar__section">
+  <h4 class="blog-article-sidebar__section-title">{{ sidebar.title }}</h4>
+  <nav class="blog-article-sidebar__nav">
+    <ul class="blog-article-sidebar__nav-list">
+      {% for tag in sidebar.tags %}
+        <li class="blog-article-sidebar__nav-item">
+          <a class="blog-article-sidebar__nav-link" href="{{ tag.url | default('#') }}">{{ tag.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</section>

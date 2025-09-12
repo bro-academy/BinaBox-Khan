@@ -1,0 +1,27 @@
+{% for article in blogKits %}
+<article class="blog__kit">
+  <div class="{{ article.size === 'large' ? 'blog__kit-large' : 'blog__kit-small' }}">
+    <img src="{{ article.image.src }}" alt="{{ article.image.alt }}" width="{{ article.image.width }}" height="{{ article.image.height }}" loading="lazy" decoding="async" class="{{ article.size === 'large' ? 'blog__kit-photo--large' : 'blog__kit-photo' }}" />
+    <span class="blog__kit-category">{{ article.category }}</span>
+  </div>
+
+  <div class="blog__kit-details">
+    <span class="blog__kit-author">{{ article.author }}</span>
+    <time datetime="{{ article.date }}" class="blog__kit-datetime">{{ article.dateReadable }}</time>
+  </div>
+
+  <h4 class="blog__kit-title">{{ article.title }}</h4>
+
+  <p class="blog__kit-description">
+    {{ article.description }}
+  </p>
+
+  <div class="blog__kit-more">
+    <a class="more-btn" href="{{ article.link }}">Read More</a>
+  </div>
+</article>
+{% endfor %}
+
+<div class="more-btn-area">
+  <a href="#" class="more-btn">Read more </a>
+</div>

@@ -1,0 +1,16 @@
+<section class="blog-header">
+  <h1 class="blog-header__title">{{ header.title }}</h1>
+  <nav class="blog-header__nav">
+    <ul class="blog-header__nav-list">
+      {% for item in header.nav %}
+        <li class="blog-header__nav-item {% if item.current %}blog-header__nav-item--current{% endif %}">
+          {% if item.url %}
+            <a href="{{ item.url }}" class="blog-header__nav-link">{{ item.label }}</a>
+          {% else %}
+            {{ item.label }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</section>

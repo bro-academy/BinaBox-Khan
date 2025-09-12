@@ -1,0 +1,80 @@
+<article class="blog-article__post">
+  <img src="{{ image.src | default('images/manofdragon.webp') }}" alt="{{ image.alt | default('Man Of Dragon') }}" width="1024" height="557" loading="lazy" decoding="async" class="blog-article__image" />
+  <p class="blog-article__caption">{{ image.caption | default('Photo Caption') }}</p>
+
+  <h2 class="blog-article__title">{{ title | default('The Basilikis NFT') }}</h2>
+
+  <div class="blog-article__category">
+    <button class="blog-article__category-button">{{ category | default('Gaming') }}</button>
+  </div>
+
+  <div class="blog-article-author">
+    <p class="blog-article__author-name">{{ author.name | default('Tony Nguyen') }}</p>
+    <time datetime="{{ author.date | default('2022-06-20') }}" class="blog__article-datetime">{{ author.dateReadable | default('20 jun 2022') }}</time>
+  </div>
+
+  <p class="blog-article__content">
+    {{ content.main | safe }}
+  </p>
+
+  <ul class="list">
+    {% for item in content.listItems %}
+      <li class="list-item">{{ item | safe }}</li>
+    {% endfor %}
+  </ul>
+
+  <ul class="blog-article__list">
+    {% for name in listNames %}
+      <li class="blog-article__list-item">{{ name }}</li>
+    {% endfor %}
+  </ul>
+
+  <div class="blog-article__quote">
+    <figure class="blog-article__quote-figure">
+      <blockquote class="blog-article__quote-blockquote">
+        "{{ quote.text }}"
+      </blockquote>
+    </figure>
+    <div class="blog-article__quote-rating">
+      <img src="{{ quote.icon }}" alt="star-icon" class="blog-article__quote-rating-icon" />
+      <span class="blog-article__quote-rating-score">{{ quote.score }}</span>
+      <span class="blog-article__quote-rating-source">{{ quote.source }}</span>
+    </div>
+  </div>
+
+  <div class="blog-article__gallery-wrapper">
+    {% for img in gallery %}
+      <figure class="blog-article__gallery-item">
+        <img class="blog-article__gallery-img" src="{{ img.src }}" width="500" height="393" loading="lazy" decoding="async" alt="{{ img.alt }}" />
+        <figcaption class="blog-article__gallery-caption">{{ img.caption }}</figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+
+  <h3 class="blog-article__subtitle">NFTs are digital assets that represent real-world objects</h3>
+  <p class="blog-article__content">{{ content.avatarIntro }}</p>
+  <p class="blog-article__content">{{ content.avatarInstructions }}</p>
+
+  <h3 class="blog-article__subtitle">NFT Avatar Generators</h3>
+  <p class="blog-article__content">{{ content.generatorInfo }}</p>
+
+  <p class="blog-article__tag-title"><strong>Tags:</strong></p>
+  <ul class="blog-article__tags-list">
+    {% for tag in tags %}
+      <li class="blog-article__tags-list">
+        <a href="#" class="blog-article__tags-link">{{ tag }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="blog-article__share-title"><strong>Share:</strong></p>
+  <ul class="blog-article__share-list">
+    {% for share in shareLinks %}
+      <li>
+        <a href="{{ share.url }}" target="_blank" class="blog-article__share-link">
+          <img src="{{ share.icon }}" alt="{{ share.alt }}" class="blog-article__share-icon" />
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</article>

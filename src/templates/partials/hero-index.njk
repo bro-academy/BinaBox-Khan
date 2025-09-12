@@ -1,0 +1,50 @@
+<section class="hero">
+  <h1 class="hero__heading">
+    WITH <span class="text-blue"> {{ platform }} </span> EXPLORE NFT COLLECTION
+  </h1>
+  <h2 class="hero__subheading">
+    {{ hero.subtitle }}
+  </h2>
+
+  <div class="hero__stats">
+    <div>
+      <p class="hero__stat-number">{{ hero.stats.totalItems }}</p>
+      <p class="hero__stat-item">{{ hero.stats.totalItemsText }}</p>
+      <button class="button button--primary">{{ hero.buttons.connect }}</button>
+    </div>
+    <div>
+      <p class="hero__stat-number">{{ hero.stats.profilesWhitelist }}</p>
+      <p class="hero__stat-item">{{ hero.stats.profilesWhitelistText }}</p>
+      <button class="button button--secondary">{{ hero.buttons.whitelist }}</button>
+    </div>
+  </div>
+
+  <!-- Main image -->
+  <img
+    src="/img/{{ hero.image.src }}.png"
+    width="{{ hero.image.width }}"
+    height="{{ hero.image.height }}"
+    loading="eager"
+    decoding="async"
+    alt="{{ hero.image.alt }}"
+    class="hero__image"
+  />
+
+  <!-- Picture element for responsive formats -->
+  <picture class="hero__image">
+    <source
+      srcset="/img/{{ hero.image.src }}-1x.avif 1x, /img/{{ hero.image.src }}-2x.avif 2x"
+      type="image/avif"
+    />
+    <source
+      srcset="/img/{{ hero.image.src }}-1x.webp 1x, /img/{{ hero.image.src }}-2x.webp 2x"
+      type="image/webp"
+    />
+    <img
+      src="/img/{{ hero.image.src }}.png"
+      alt="{{ hero.image.alt }}"
+      width="{{ hero.image.width }}"
+      height="{{ hero.image.height }}"
+    />
+  </picture>
+</section>

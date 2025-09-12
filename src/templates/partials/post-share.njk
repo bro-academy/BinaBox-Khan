@@ -1,0 +1,10 @@
+<p class="blog-article__share-title"><strong>{{ share.title }}</strong></p>
+<ul class="blog-article__share-list">
+  {% for platform in share.platforms %}
+    <li class="blog-article__share-item">
+      <a href="{{ platform.url }}" target="_blank" class="blog-article__share-link">
+        <img src="{{ platform.icon }}" alt="{{ platform.alt }}" class="blog-article__share-icon" />
+      </a>
+    </li>
+  {% endfor %}
+</ul>
